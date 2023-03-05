@@ -28,9 +28,9 @@ function Section({ children }) {
 const HeroScreen = () => {
   return (
     <div className='w-full h-full flex flex-col items-center justify-center'>
-          <div className="flex flex-row  justify-center items-center rounded-full  mt-4 p-4 border-gray-400 border ">
-               <motion.img  initial={{opacity:0}} animate={{opacity:1}} transition={{delay:1, duration:2}} src={me1} alt="me1" className=" w-52 sm:w-72  h-full rounded-full border border-gray-200 hover:shadow-2xl"/>
-            </div>
+          <motion.div initial={{opacity:0}} whileInView={{opacity:1}} className="flex flex-row  justify-center items-center rounded-full  mt-4 p-4  border  shadow-lg shadow-gray-500/60  ">
+               <motion.img  initial={{opacity:0}} animate={{opacity:1}} transition={{delay:1, duration:2}} src={me1} alt="me1" className=" w-52 sm:w-72  h-full rounded-full border border-gray-200  hover:shadow-2xl"/>
+            </motion.div>
         
 
         <motion.div
