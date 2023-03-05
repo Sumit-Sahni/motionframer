@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Sumit-Sahni/Framer_Motion/static/css/main.0d1e32b1.css",
+    "main.js": "/Sumit-Sahni/Framer_Motion/static/js/main.525fc6cc.js",
+    "static/media/me1.png": "/Sumit-Sahni/Framer_Motion/static/media/me1.ac3f480290d14d61ab92.png",
+    "index.html": "/Sumit-Sahni/Framer_Motion/index.html",
+    "main.0d1e32b1.css.map": "/Sumit-Sahni/Framer_Motion/static/css/main.0d1e32b1.css.map",
+    "main.525fc6cc.js.map": "/Sumit-Sahni/Framer_Motion/static/js/main.525fc6cc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0d1e32b1.css",
+    "static/js/main.525fc6cc.js"
+  ]
+}
