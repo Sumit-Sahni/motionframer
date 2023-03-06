@@ -1,15 +1,14 @@
-import React, { useState, useEffect } from 'react';
-import { BrowserRouter,Routes, Route  } from 'react-router-dom';
-import { HeroSection } from './screens/Main';
+import React from 'react';
+import {BrowserRouter as Router} from 'react-router-dom';
+import AnimatedRoutes from './screens/AnimateRoutes';
+
+
 
 function App() {
-
     return(
-        <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<HeroSection/>}/>
-        </Routes>
-      </BrowserRouter>
+     <Router>
+         <AnimatedRoutes/>
+     </Router>
     )
  
 }

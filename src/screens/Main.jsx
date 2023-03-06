@@ -10,7 +10,5 @@ export const HeroSection = () => {
        <NavbarComp/>
        <HeroScreen/> 
     </section>
-   
-  
   )
 }
