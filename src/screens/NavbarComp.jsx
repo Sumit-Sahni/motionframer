@@ -19,7 +19,7 @@ const NavbarComp = () => {
        
         className='w-full h-[80px] z-10  sticky'>
           <div className='px-12 flex justify-between items-center w-full h-full'>
-             <motion.div initial={{x:-100}} animate={{x:0}} transition={{duration:1}} className='flex items-center'>
+             <motion.div initial={{x:-100}} animate={{x:0}} transition={{duration:1 ,delay:1}} className='flex items-center'>
                  <h1 className='text-3xl lg:text-4xl font-bold mr-4 '><img src={Logo} alt='logo' width={40}></img> </h1>
              </motion.div>
               <motion.ul  initial={{opacity:0}} animate={{opacity:1}} transition={{duration:1}} className='hidden md:flex items-center text-xl font-light '>
