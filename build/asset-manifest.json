@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Sumit-Sahni/framermotion.git/static/css/main.0d1e32b1.css",
-    "main.js": "/Sumit-Sahni/framermotion.git/static/js/main.02c18a99.js",
-    "static/media/me1.png": "/Sumit-Sahni/framermotion.git/static/media/me1.ac3f480290d14d61ab92.png",
-    "index.html": "/Sumit-Sahni/framermotion.git/index.html",
-    "main.0d1e32b1.css.map": "/Sumit-Sahni/framermotion.git/static/css/main.0d1e32b1.css.map",
-    "main.02c18a99.js.map": "/Sumit-Sahni/framermotion.git/static/js/main.02c18a99.js.map"
+    "main.css": "/static/css/main.0d1e32b1.css",
+    "main.js": "/static/js/main.d8707156.js",
+    "static/media/me1.png": "/static/media/me1.ac3f480290d14d61ab92.png",
+    "index.html": "/index.html",
+    "main.0d1e32b1.css.map": "/static/css/main.0d1e32b1.css.map",
+    "main.d8707156.js.map": "/static/js/main.d8707156.js.map"
   },
   "entrypoints": [
     "static/css/main.0d1e32b1.css",
-    "static/js/main.02c18a99.js"
+    "static/js/main.d8707156.js"
   ]
 }
