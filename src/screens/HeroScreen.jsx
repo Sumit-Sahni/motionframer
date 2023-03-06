@@ -30,14 +30,14 @@ function Section({ children }) {
 const HeroScreen = () => {
   return (
     <motion.div exit={{backgroundColor: "#666666", y:-80, opacity:0.2}} transition={{duration:1}} className='w-full h-full flex flex-col items-center justify-center'>
-          <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{duration:1}} className="flex flex-row  justify-center items-center rounded-full  mt-4 p-4  border  shadow-lg shadow-gray-500/60  ">
-               <motion.img  initial={{opacity:0, y:-100}} animate={{y:0, opacity:1}} transition={{ duration:1, type:"keyframes", stiffness:120}}  src={me1} alt="me1" className=" w-52 sm:w-72  h-full rounded-full border border-gray-200  hover:shadow-2xl"/>
+          <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{duration:2}} className="flex flex-row  justify-center items-center rounded-full  mt-4 p-4  border  shadow-lg shadow-gray-500/60  ">
+               <motion.img  initial={{opacity:0, y:-100}} animate={{y:0, opacity:1}} transition={{ duration:2, type:"keyframes", stiffness:120}}  src={me1} alt="me1" className=" w-52 sm:w-72  h-full rounded-full border border-gray-200  hover:shadow-2xl"/>
             </motion.div>
     
         <motion.div
                  initial={{y:100,opacity:0}}
                  animate={{ once:"flase", y:0, opacity:1 }}
-                 transition={{ duration:1}}
+                 transition={{ delay:1, duration:2}}
                  whileInView={{textShadow: "8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.25)"}}
                   className='w-full h-full text-black py-6'>
                  <h1 className='text-center text-sm md:text-3xl font-playfair text-gray-500'>Hi! I am Sumit Sahni a UI designer</h1>
@@ -47,7 +47,7 @@ const HeroScreen = () => {
         </motion.div>
 
         <motion.div
-                 initial={{y:100, opacity:0}} animate={{y:0,opacity:1}} transition={{duration:1}}
+                 initial={{y:100, opacity:0}} animate={{y:0,opacity:1}} transition={{duration:2}}
                  whileHover={{shadow: "8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.25)"}}
                   className='w-[90%] mx-auto  sm:w-1/2 md:w-1/3 sm:mx-auto mt-10  text-center p-4 hover:border-double  hover:shadow-2xl delay-550 hover:bg-gray-500 hover:text-white transition duration-700 ease-in-out mb-16'>
                <h1>
