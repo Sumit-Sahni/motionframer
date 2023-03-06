@@ -47,7 +47,7 @@ const HeroScreen = () => {
         </motion.div>
 
         <motion.div
-                 initial={{opacity:0}} animate={{opacity:1}} transition={{ duration:1, delay:1.5}}
+                 initial={{y:100, opacity:0}} animate={{y:0,opacity:1}} transition={{duration:1}}
                  whileHover={{shadow: "8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.25)"}}
                   className='w-[90%] mx-auto  sm:w-1/2 md:w-1/3 sm:mx-auto mt-10  text-center p-4 hover:border-double  hover:shadow-2xl delay-550 hover:bg-gray-500 hover:text-white transition duration-700 ease-in-out mb-16'>
                <h1>
