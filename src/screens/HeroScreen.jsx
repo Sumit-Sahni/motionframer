@@ -35,9 +35,9 @@ function Section({ children }) {
             </motion.div>
     
         <motion.div
-                 initial={{y:100,opacity:0}}
+                 initial={{y:60,opacity:0}}
                  animate={{ once:"true", y:0, opacity:1 }}
-                 transition={{duration:1}}
+                 transition={{duration:1.5}}
                  whileInView={{textShadow: "8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.25)"}}
                   className='w-full h-full text-black py-6'>
                  <h1 className='text-center text-sm md:text-3xl font-playfair text-gray-500'>Hi! I am Sumit Sahni a UI designer</h1>
@@ -47,7 +47,7 @@ function Section({ children }) {
         </motion.div>
 
         <motion.div
-                 initial={{opacity:0}} animate={{opacity:1}} transition={{duration:3}} 
+                //  initial={{opacity:0}} animate={{opacity:1}} transition={{duration:3}} 
                  whileHover={{shadow: "8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.25)"}}
                   className='w-[90%] mx-auto  sm:w-1/2 md:w-1/3 sm:mx-auto mt-10  text-center p-4 hover:border-double  hover:shadow-2xl delay-550 hover:bg-gray-500 hover:text-white transition duration-700 ease-in-out mb-16'>
                <h1>
