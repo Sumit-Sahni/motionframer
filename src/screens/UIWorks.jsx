@@ -1,5 +1,5 @@
 import React , {useState}from 'react'
-import {AnimatePresence, motion} from "framer-motion"
+import {AnimatePresence, delay, motion} from "framer-motion"
 import {BsDot} from "react-icons/bs"
 import room1 from "../assests/room1.jpg"
 import room2 from "../assests/room2.jpg"
@@ -27,17 +27,17 @@ const UIWorks = () => {
   }
 
   return (
-      <div className='sm:w-full sm:p-10 sm:h-[90vh] flex flex-col sm:flex-row items-center justify-center border p-10'>
-          <div className='w-full h-72 lg:w-1/2 sm:h-[80vh] lg:h-full flex flex-col justify-center items-center p-4 overflow-hidden '>
+      <div className='sm:w-full sm:p-10 sm:h-[90vh] flex flex-col lg:flex-row items-center justify-center border p-10'>
+          <div className='w-full h-72  lg:w-1/2 sm:h-[80vh] lg:h-full flex flex-col justify-center items-center p-4  '>
             {/* <AiOutlineLeft className='cursor-pointer mx-4 text-gray-400' onClick={prevSlide}/> */}
             <div className='w-32 sm:w-60 lg:w-64  rounded-2xl overflow-hidden' style={{boxShadow:"rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset"}}>
               <AnimatePresence>
               <motion.img 
                  key={currentIndex}
-                 initial={{y:50}}
-                 animate={{once:"true",y:0}}
+                 initial={{scale:0, opacity:0}}
+                 animate={{once:"true",scale:0.9, opacity:1}}
                  transition={{duration:1}}
-                 exit={{y:-20}}
+                 exit={{scale:0.5, opacity:0, delay:0, duration:0}}
                 src={slide[currentIndex].url}  className='w-32 sm:w-60 lg:w-64 overflow-hidden'>
                 </motion.img>
               </AnimatePresence>
@@ -53,12 +53,12 @@ const UIWorks = () => {
                  }
             </div>
           </div>
-          <div className='w-full  lg:w-1/2 sm:h-[80vh] lg:h-full flex items-center sm:p-16'>
+          <div className='w-full p-5  lg:w-1/2 sm:h-[80vh] lg:h-full flex items-center sm:p-16'>
             <div>
                <motion.h1 
                 initial={{x:400, scale:0}}
                 animate={{x:0, scale:1}}
-                transition={{duration:2, delay:0.2}}
+                transition={{duration:1.7}}
                className='text-3xl text-center sm:text-6xl w-full font-serif lg:text-left'>React Native Project</motion.h1>
                <motion.p 
                 initial={{y:100}}
