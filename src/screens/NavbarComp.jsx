@@ -9,7 +9,6 @@ import { motion} from "framer-motion"
 const NavbarComp = () => {
 
      const [nav, setNav] = useState(true)
-
      const handleNavbar = () =>{
         setNav(!nav)
      }
