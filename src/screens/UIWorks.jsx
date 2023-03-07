@@ -4,7 +4,6 @@ import {BsDot} from "react-icons/bs"
 import room1 from "../assests/room1.jpg"
 import room2 from "../assests/room2.jpg"
 import room3 from "../assests/room3.jpg"
-// import frame from "../assests/frame.Png"
 
 const UIWorks = () => {
    
@@ -22,70 +21,11 @@ const UIWorks = () => {
 
   const [currentIndex, setCurrentIndex] = useState(0)
 
-  // const prevSlide = ()=>{
-  //   const isFirstSlide = currentIndex === 0;
-  //   const newIndex = isFirstSlide ? slide.length -1 :currentIndex -1;
-  //   setCurrentIndex(newIndex)
-  // }
-  // const nextSlide = ()=>{
-  //   const isFirstSlide = currentIndex === slide.length-1;
-  //   const newIndex = isFirstSlide ? 0 :currentIndex +1;
-  //   setCurrentIndex(newIndex)
-  // }
+
   const goToSlide = (slideIndex)=>{
      setCurrentIndex(slideIndex)
   }
 
-
-  // const parentVarients ={
-  //       hidden:{
-  //         opacity:0,
-  //         x:60
-  //       },
-  //       visible:{
-  //           opacity:1,
-  //           x:0,
-  //           transition:{
-  //             duration:2
-  //           }
-  //       }
-  // }
-  // const childvarients ={
-  //      hidden:{
-  //       x:600,
-  //       y:100,
-  //      },
-  //      visible:{
-  //         x:0
-  //      }
-  // }
-
-  const svgVarient ={
-      hidden:{
-        opacity:0
-      },
-      visible:{
-        opacity:1,
-        transition:{
-          duration:2
-        }
-      }
-  }
-
-  const svgPathVarient={
-      hidden:{
-         opacity:0,
-         pathLength:0
-      },
-      visible:{
-        opacity:1,
-        pathLength:1,
-        transition:{
-          duration:1,
-          ease:"easeOut"
-        }
-      }
-  }
   return (
       <div className='sm:w-full sm:p-10 sm:h-[90vh] flex flex-col sm:flex-row items-center justify-center border p-10'>
           <div className='w-full h-72 lg:w-1/2 sm:h-[80vh] lg:h-full flex flex-col justify-center items-center p-4 overflow-hidden '>
