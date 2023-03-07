@@ -29,7 +29,7 @@ function Section({ children }) {
 
 const HeroScreen = () => {
   return (
-    <motion.div exit={{backgroundColor: "#666666", y:-80, opacity:0.2}} transition={{duration:1}} className='w-full h-full flex flex-col items-center justify-center'>
+    <motion.div  exit={{backgroundColor: "#666666", y:-80, opacity:0.2}} transition={{duration:1}} className='w-full h-full flex flex-col items-center justify-center'>
           <motion.div  className="flex flex-row  justify-center items-center rounded-full  mt-4 p-4  border  shadow-lg shadow-gray-500/60  ">
           <motion.img  initial={{opacity:0, y:-100}} animate={{y:0, opacity:1}} transition={{ duration:2, type:"keyframes", stiffness:120}}  src={me1} alt="me1" className=" w-52 sm:w-72  h-full rounded-full border border-gray-200  hover:shadow-2xl"/>
             </motion.div>

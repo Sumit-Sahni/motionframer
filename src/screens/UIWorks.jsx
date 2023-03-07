@@ -4,6 +4,7 @@ import {BsDot} from "react-icons/bs"
 import room1 from "../assests/room1.jpg"
 import room2 from "../assests/room2.jpg"
 import room3 from "../assests/room3.jpg"
+import NavbarComp from './NavbarComp'
 
 const UIWorks = () => {
    const slide = [
@@ -22,7 +23,9 @@ const UIWorks = () => {
      setCurrentIndex(slideIndex)
   }
   return (
-      <motion.div exit={{backgroundColor: "#666666", y:-80, opacity:0.2}} transition={{duration:1}}  className='sm:w-full sm:p-10 sm:h-[90vh] flex flex-col lg:flex-row items-center justify-center border p-10'>
+    <>
+    <NavbarComp/>
+      <motion.div initial={{y:0, opacity:0}} animate={{ y:0, opacity:1}} transition={{duration:1.3}} exit={{backgroundColor: "#666666", y:-80, opacity:0.2}} className='sm:w-full sm:p-10 sm:h-[90vh] flex flex-col lg:flex-row items-center justify-center border p-10'>
           <div className='w-full h-72  lg:w-1/2 sm:h-[80vh] lg:h-full flex flex-col justify-center items-center p-4  '>
             <div className='w-32 sm:w-60 lg:w-64  rounded-2xl overflow-hidden' style={{boxShadow:"rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset"}}>
               <AnimatePresence>
@@ -62,6 +65,7 @@ const UIWorks = () => {
             </div> 
            </div>
       </motion.div>
+      </>
   )
 }
 export default UIWorks
