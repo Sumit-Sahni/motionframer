@@ -83,7 +83,7 @@ const HeroScreen = () => {
                     <div className='text-xl md:text-3xl font-thin px-4 md:px-12 text-center '>
                        <p>
                        Thanks for checking out my work! 🙌🏻
-                       tap to know more about <u><a href="/me" className='text-red-600 font-semibold' >me</a></u> or look at my <u><a href="https://drive.google.com/file/d/1lxEePzFNT4mQQsCDWHg9bBLsgTXiXSjc/view?usp=share_link" className='text-red-600 font-semibold'>resume!</a></u>
+                       tap to know more about <u><a href={"/"} className='text-red-600 font-semibold' >me</a></u> or look at my <u><a href="https://drive.google.com/file/d/1lxEePzFNT4mQQsCDWHg9bBLsgTXiXSjc/view?usp=share_link" className='text-red-600 font-semibold'>resume!</a></u>
                        </p>
                     </div>
               </div>
