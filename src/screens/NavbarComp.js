@@ -21,7 +21,7 @@ const NavbarComp = () => {
                   <NavLink to="/"><img src={Logo} alt='logo' width={40}></img></NavLink>
              </motion.div>
               <motion.ul  initial={{opacity:0}} animate={{opacity:1}} transition={{duration:1}} className='hidden md:flex items-center text-xl font-light '>
-                <NavLink to='/UI'>UI</NavLink>
+                <NavLink to='/Ui'>UI</NavLink>
               </motion.ul>
               <div className=' md:hidden' onClick={handleNavbar}>
                 {!nav ? <AiOutlineClose size={30} className="cursor-pointer"/> :<AiOutlineMenu size={30} className="cursor-pointer"/> }
@@ -30,7 +30,7 @@ const NavbarComp = () => {
           </div>
          
           <motion.ul initial={{opacity:0}} whileInView={{opacity:1}} transition={{ duration:1, delay:0.5}} className={nav ? "hidden" :  ` absolute bg-black text-white w-full h-[200vh] px-8 md:hidden `}>
-                  <NavLink to={"/UI"}>UI</NavLink>
+                  <NavLink to={"/Ui"}>UI</NavLink>
               </motion.ul>
         
         </div>
