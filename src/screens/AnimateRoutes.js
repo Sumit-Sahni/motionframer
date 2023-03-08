@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
-import { HeroSection } from "./Main";
+import  HeroSection  from "./HeroScreen";
 import UIWorks from "./UIWorks";
 
 function AnimatedRoutes() {

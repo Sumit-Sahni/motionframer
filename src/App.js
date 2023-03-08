@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { StrictMode } from 'react';
 import {BrowserRouter as Router} from 'react-router-dom';
 import AnimatedRoutes from './screens/AnimateRoutes';
 
@@ -6,9 +6,11 @@ import AnimatedRoutes from './screens/AnimateRoutes';
 
 function App() {
     return(
-     <Router>
-         <AnimatedRoutes/>
-     </Router>
+        <StrictMode>
+            <Router>
+                <AnimatedRoutes/>
+            </Router>
+        </StrictMode>
     )
  
 }
