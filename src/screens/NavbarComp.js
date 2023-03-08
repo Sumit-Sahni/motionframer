@@ -22,6 +22,7 @@ const NavbarComp = () => {
              </motion.div>
               <motion.ul  initial={{opacity:0}} animate={{opacity:1}} transition={{duration:1}} className='hidden md:flex items-center text-xl font-light '>
                 <NavLink to='/Ui'>UI</NavLink>
+                <NavLink to='/work'>work</NavLink>
               </motion.ul>
               <div className=' md:hidden' onClick={handleNavbar}>
                 {!nav ? <AiOutlineClose size={30} className="cursor-pointer"/> :<AiOutlineMenu size={30} className="cursor-pointer"/> }
