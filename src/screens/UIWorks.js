@@ -43,7 +43,7 @@ const UIWorks = () => {
                  {
                   slide.map((slide, index)=>{
                     return(
-                        <BsDot onClick={()=> goToSlide(index)}/>
+                        <BsDot key={index} onClick={()=> goToSlide(index)}/>
                     )
                   })
                  }
