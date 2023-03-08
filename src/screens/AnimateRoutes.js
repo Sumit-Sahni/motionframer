@@ -10,9 +10,9 @@ function AnimatedRoutes() {
   return (
     <AnimatePresence  >
       <Routes key={location.pathname} location={location}>
+       <Route path="/Ui" element={<UIWorks/>}/> 
         <Route path="/" element={<HeroSection/>} />
-        <Route path="/Ui" element={<UIWorks/>}/>
-        <Route path="/*" element={<Navigate to="Ui"/>}/>
+        <Route path="/*" element={<Navigate to="/"/>}/>
       </Routes>
     </AnimatePresence>
   );
