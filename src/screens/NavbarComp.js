@@ -14,8 +14,7 @@ const NavbarComp = () => {
      }
 
   return (
-        <motion.div
-       
+        <div
         className='w-full h-[80px] z-10  sticky'>
           <div className='px-12 flex justify-between items-center w-full h-full'>
              <motion.div initial={{x:-100}} animate={{x:0}} transition={{duration:1 ,delay:1}} className='flex items-center'>
@@ -47,7 +46,7 @@ const NavbarComp = () => {
                  </li>
               </motion.ul>
         
-        </motion.div>
+        </div>
   )
 }
 

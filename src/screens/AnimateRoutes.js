@@ -6,9 +6,10 @@ import UIWorks from "./UIWorks";
 
 function AnimatedRoutes() {
   const location = useLocation();
+  console.log(location);
   return (
-    <AnimatePresence onExitComplete >
-      <Routes key={location} location={location}>
+    <AnimatePresence onExitComplete={() => console.log("exit")} >
+      <Routes key={location.pathname} location={location}>
         <Route path="/" element={<HeroSection/>} />
         <Route path="/UI" element={<UIWorks/>}/>
       </Routes>
