@@ -8,7 +8,7 @@ function AnimatedRoutes() {
   const location = useLocation();
   return (
     <AnimatePresence onExitComplete >
-      <Routes key={location.pathname} location={location}>
+      <Routes key={location} location={location}>
         <Route path="/" element={<HeroSection/>} />
         <Route path="/UI" element={<UIWorks/>}/>
       </Routes>
