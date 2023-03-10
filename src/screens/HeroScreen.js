@@ -105,7 +105,7 @@ const HeroScreen = () => {
          {/* EXPERTISE */}
          
           <section className=' w-full flex items-center '>
-                <div className='w-full p-1  sm:h-auto md:h-auto border-2 border-sky-600   md:w-[80%] mx-auto   flex flex-row flex-wrap items-center justify-center  gap-4 '>
+                <div className='w-full p-1  sm:h-auto md:h-auto md:w-[80%] mx-auto   flex flex-row flex-wrap items-center justify-center  gap-4 '>
                       {
                         slide.map(( item, i)=>{
                           return(
@@ -116,7 +116,7 @@ const HeroScreen = () => {
                               transition={{duration:0.4, delay:i*0.2}}
                              
                               className='w-28 h-28 sm:w-52 sm:h-52 md:w-80 md:h-60 bg-cyan-600 flex items-center justify-center  shadow-[rgba(0, 0, 0, 0.25) 0px 25px 50px -12px]'>
-                                <h1 className='text-white text-3xl font-extralight '>React Js</h1>
+                                <h1 className='text-white text-3xl font-extralight text-center '>React Js</h1>
                              </motion.div>
                           )
                         })
