@@ -5,6 +5,9 @@ import Footer from './FooterScreen'
 import { useRef } from "react";
 import { useInView } from "framer-motion";
 import NavbarComp from './NavbarComp';
+import room1 from "../assests/room1.jpg"
+import room2 from "../assests/room2.jpg"
+import room3 from "../assests/room3.jpg"
 
 
 function Section({ children }) {
@@ -26,7 +29,28 @@ function Section({ children }) {
     </section>
   );
 }
+   
 
+const slide = [
+  {
+   url :room1
+  },
+  {
+   url :room2
+  },
+  {
+   url :room3
+  },
+  {
+    url :room1
+   },
+   {
+    url :room2
+   },
+   {
+    url :room3
+   },
+]
 
 const HeroScreen = () => {
     let  ref  = useRef()
@@ -80,8 +104,32 @@ const HeroScreen = () => {
                    </span>
                  </h1>
         </motion.div>
-       
-        <section className='w-full h-48 flex flex-col items-center justify-center  ' id='contact'>
+      
+         {/* EXPERTISE */}
+         
+          <section className=' w-full h-auto flex items-center '>
+                <div className='w-[80%] mx-auto  sm:h-[70vh] flex flex-row flex-wrap items-center justify-center gap-y-3 gap-x-4'>
+                      {
+                        slide.map(( item, i)=>{
+                          return(
+                             <motion.div
+                              initial={{opacity:0, x:i%2 ===0?-50:100,y:50}}
+                              whileInView={{opacity:1, x:0, y:0}}
+                              viewport={{once:'true'}}
+                              transition={{duration:0.4, delay:i*0.2}}
+                             
+                              className='w-80 h-60 bg-cyan-600 flex items-center justify-center  shadow-[rgba(0, 0, 0, 0.25) 0px 25px 50px -12px]'>
+                                <h1 className='text-white text-3xl font-extralight '>React Js</h1>
+                             </motion.div>
+                          )
+                        })
+                      }
+                </div>
+          </section>
+
+       {/* CONTACTS */}
+
+        <section className='w-full h-48 flex flex-col items-center justify-center'>
           <Section>
              <div className=' xsm:w-3/5 lg:w-3/5 xl:w-1/2 mx-auto'>
                     <div className='text-xl md:text-3xl font-thin px-4 md:px-12 text-center '>
