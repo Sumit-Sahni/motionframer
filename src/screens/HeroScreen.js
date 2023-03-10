@@ -105,7 +105,7 @@ const HeroScreen = () => {
          {/* EXPERTISE */}
          
           <section className=' w-full flex items-center '>
-                <div className='w-full p-1 h-[56vh] sm:h-[60vh] border-2 border-sky-600   md:w-[80%] mx-auto   flex flex-row flex-wrap items-center justify-center  gap-4 '>
+                <div className='w-full p-1  sm:h-auto md:h-auto border-2 border-sky-600   md:w-[80%] mx-auto   flex flex-row flex-wrap items-center justify-center  gap-4 '>
                       {
                         slide.map(( item, i)=>{
                           return(
@@ -126,7 +126,7 @@ const HeroScreen = () => {
 
        {/* CONTACTS */}
 
-        <section className='w-full mt-12 py-12'>
+        <section className='w-full mt-10 py-12'>
         
              <div className=' xsm:w-3/5 lg:w-3/5 xl:w-1/2 mx-auto'>
                     <div className='text-xl md:text-3xl font-thin px-4 md:px-12 text-center '>
