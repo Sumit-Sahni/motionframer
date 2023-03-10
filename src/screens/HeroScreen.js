@@ -47,20 +47,17 @@ const slide = [
    {
     url :room2
    },
-   {
-    url :room3
-   },
 ]
 
 const HeroScreen = () => {
     let  ref  = useRef()
     let {scrollYProgress} = useScroll();
-    let scale = useTransform(scrollYProgress, [0,1],[1, 1.2])
+    let opacity = useTransform(scrollYProgress, [1,0],[0, 1])
 
   return (
     <>
     <NavbarComp />
-    <motion.div ref={ref} exit={{backgroundColor: "#666666", y:-80, opacity:0.2}} transition={{duration:1}} className='w-full h-full flex flex-col items-center justify-center'>
+    <motion.div ref={ref} exit={{backgroundColor: "#666666", y:-80, opacity:0.2}} transition={{duration:1}} className='w-full h-auto flex flex-col items-center justify-center'>
           <motion.div  className="flex flex-row  justify-center items-center rounded-full  mt-4 p-4  border  shadow-lg shadow-gray-500/60  ">
           <motion.img  initial={{opacity:0, y:-100}} animate={{y:0, opacity:1}} transition={{ duration:2, type:"keyframes", stiffness:120}}  src={me1} alt="me1" className=" w-52 sm:w-72  h-full rounded-full border border-gray-200  hover:shadow-2xl"/>
             </motion.div>
@@ -72,8 +69,8 @@ const HeroScreen = () => {
                  whileInView={{textShadow: "8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.25)"}}
                   className='w-full h-full text-black py-6 '>
                  <h1 className='text-center text-sm md:text-3xl font-playfair text-gray-500'>Hi! I am Sumit Sahni a UI designer</h1>
-               <motion.div  style={{scale}} className='w-full mx-auto sm:1/2 md:w-4/5 lg:w-3/5 xl:w-4/5'>
-                 <h2 className='p-2 text-center text-3xl md:text-6xl font-playfair font-semibold text-gray-600'>Transforming ideas into interactive digital Realities</h2>  
+               <motion.div  style={{opacity}} className='w-full mx-auto sm:1/2 md:w-4/5 lg:w-3/5 xl:w-4/5'>
+                 <h2 className='p-2 text-center text-3xl md:text-6xl font-playfair font-semibold text-gray-700'>Transforming ideas into interactive digital Realities</h2>  
                </motion.div>
         </motion.div>
 
@@ -107,8 +104,8 @@ const HeroScreen = () => {
       
          {/* EXPERTISE */}
          
-          <section className=' w-full h-auto flex items-center '>
-                <div className='w-[80%] mx-auto  sm:h-[70vh] flex flex-row flex-wrap items-center justify-center gap-y-3 gap-x-4'>
+          <section className=' w-full flex items-center '>
+                <div className='w-full p-1 h-[56vh] sm:h-[60vh] border-2 border-sky-600   md:w-[80%] mx-auto   flex flex-row flex-wrap items-center justify-center  gap-4 '>
                       {
                         slide.map(( item, i)=>{
                           return(
@@ -118,7 +115,7 @@ const HeroScreen = () => {
                               viewport={{once:'true'}}
                               transition={{duration:0.4, delay:i*0.2}}
                              
-                              className='w-80 h-60 bg-cyan-600 flex items-center justify-center  shadow-[rgba(0, 0, 0, 0.25) 0px 25px 50px -12px]'>
+                              className='w-28 h-28 sm:w-52 sm:h-52 md:w-80 md:h-60 bg-cyan-600 flex items-center justify-center  shadow-[rgba(0, 0, 0, 0.25) 0px 25px 50px -12px]'>
                                 <h1 className='text-white text-3xl font-extralight '>React Js</h1>
                              </motion.div>
                           )
@@ -129,8 +126,8 @@ const HeroScreen = () => {
 
        {/* CONTACTS */}
 
-        <section className='w-full h-48 flex flex-col items-center justify-center'>
-          <Section>
+        <section className='w-full mt-12 py-12'>
+        
              <div className=' xsm:w-3/5 lg:w-3/5 xl:w-1/2 mx-auto'>
                     <div className='text-xl md:text-3xl font-thin px-4 md:px-12 text-center '>
                        <p>
@@ -138,8 +135,7 @@ const HeroScreen = () => {
                        tap to know more about <u><a href={"/"} className='text-red-600 font-semibold' >me</a></u> or look at my <u><a href="https://drive.google.com/file/d/1lxEePzFNT4mQQsCDWHg9bBLsgTXiXSjc/view?usp=share_link" className='text-red-600 font-semibold'>resume!</a></u>
                        </p>
                     </div>
-              </div>
-              </Section>
+              </div>    
         </section>
        
         <Footer/>
