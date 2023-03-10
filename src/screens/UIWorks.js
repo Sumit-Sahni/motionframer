@@ -75,8 +75,8 @@ const UIWorks = () => {
                  }
             </div>
           </div>
-          <div className='w-full p-5  lg:w-1/2 sm:h-[80vh] lg:h-full flex flex-col items-center sm:p-16'>
-            <div className='flex flex-col items-center sm:block'>
+          <div className='w-full p-5  lg:w-1/2 sm:h-[80vh] lg:h-full flex flex-col items-center justify-center sm:p-16'>
+            <div className='flex flex-col  items-center sm:block'>
                <motion.h1 
                 initial={{x:400, scale:0}}
                 animate={{x:0, scale:1}}
@@ -98,23 +98,23 @@ const UIWorks = () => {
                                 {/* / REACT OTHER PROJECT  */}
        <section   className='flex flex-col items-center '>
              <div 
-                 className='w-full p-8 mt-10'>
+                 className='w-full p-8 mt-12'>
                 <motion.h1 
-                 initial={{x:-200}}
-                 whileInView={{x:0}}
+                 initial={{scale:0}}
+                 whileInView={{scale:1}}
                  viewport={{once:'true'}}
-                 transition={{duration:1.2}}
+                 transition={{duration:1.2,}}
                 className='text-center text-5xl sm:text-6xl sm:p-8 font-opensans font-extralight text-gray-600'>From Coding to Creation</motion.h1>
              </div>
-             <div className='w-full h-[100vh]  sm:h-auto  flex flex-col md:flex-row item-center justify-between p-4 sm:p-16'>
+             <div className='w-full h-[60vh]  sm:h-auto  flex flex-col md:flex-row item-center justify-between p-4 sm:p-16'>
                  
-              <motion.div
-                 initial={{x:-200}}
-                 whileInView={{x:0}}
+               <motion.div
+                 initial={{opacity:0}}
+                 whileInView={{opacity:1}}
                  viewport={{once:'true'}}
-                 transition={{duration:1.2}}
-              className="transform transition duration-300 ease-out cursor-pointer max-w-full md:w-[96%] lg:w-2/5 h-[90%] xl:w-2/3  md:h-[25rem] lg:h-[40vh] mx-auto flex flex-col md:flex-row lg:flex-row items-center justify-centerbg-white rounded-2xl  hover:text-white hover:font-bold hover:bg-gradient-to-r from-green-400 to-blue border-2">
-                         <div className=' h-96 lg:w-12 hidden  md:hidden   lg:flex flex-col items-center justify-center'>
+                 transition={{duration:1.3}}
+                 className="transform transition duration-300 ease-out cursor-pointer sm:w-[85%] max-w-full md:w-[96%] lg:w-2/5  h-[70%] hover:h-[80%] xl:w-2/3  md:h-[25rem] lg:h-[40vh] mx-auto flex flex-col md:flex-row lg:flex-row items-center justify-centerbg-white rounded-2xl  hover:text-white hover:font-bold hover:bg-gradient-to-r from-green-400 to-blue border-2">
+                         <div className='h-96 lg:w-12 hidden  md:hidden   lg:flex flex-col items-center justify-center'>
                             <p className='rotate-180 ' style={{"writingMode":"vertical-rl"}}>UX Design + Research  (by Sumit)</p>
                          </div>
                          <div className='w-[100%] h-[100%] md:h-full lg:h-full lg:w-1/2 overflow-hidden rounded'>
@@ -138,11 +138,11 @@ const UIWorks = () => {
               </motion.div>
 
               <motion.div 
-                              initial={{x:200}}
-                              whileInView={{x:0}}
-                              viewport={{once:'true'}}
-                              transition={{duration:1.2}}
-              className="transform transition duration-300 ease-out cursor-pointer w-full md:w-[96%] lg:w-2/5 xl:w-2/3 h-[90%] md:h-[25rem] lg:h-[40vh] mx-auto flex flex-col md:flex-row lg:flex-row items-center justify-center   bg-white rounded-2xl  hover:text-white hover:font-bold hover:bg-gradient-to-r from-green-400 to-blue border-2">
+                           initial={{opacity:0}}
+                           whileInView={{opacity:1}}
+                           viewport={{once:'true'}}
+                           transition={{duration:1.3}}
+              className=" mt-4 transform transition duration-300 ease-out cursor-pointer w-full sm:w-[85%] md:w-[96%] lg:w-2/5 xl:w-2/3 h-[70%] hover:h-[80%] md:h-[25rem] lg:h-[40vh] mx-auto flex flex-col md:flex-row lg:flex-row items-center justify-center   bg-white rounded-2xl  hover:text-white hover:font-bold hover:bg-gradient-to-r from-green-400 to-blue border-2">
                          <div className=' h-96 lg:w-12 hidden  md:hidden   lg:flex flex-col items-center justify-center'>
                             <p className='rotate-180 ' style={{"writingMode":"vertical-rl"}}>UX Design + Research  (by Sumit)</p>
                          </div>

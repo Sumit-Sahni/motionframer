@@ -30,7 +30,7 @@ const NavbarComp = () => {
               </div>
           </div>
          
-          <motion.ul initial={{opacity:0}} whileInView={{opacity:1}} transition={{ duration:1, delay:0.5}} className={nav ? "hidden" :  ` absolute bg-black text-white w-full h-[800vh]  px-8 md:hidden text-3xl`}>
+          <ul  className={nav ? "hidden" :  ` absolute bg-black text-white w-full h-[800vh]  px-8 md:hidden text-3xl`}>
           <li className='p-4 w-full text-2xl font-cba my-5 text-left'>
                  <Link onClick={handleNavbar} className='cursor-pointer' to="about" spy={true} smooth={true} offset={-110} duration={700}><NavLink to='/Ui'>UI</NavLink></Link>
                  </li>
@@ -42,7 +42,7 @@ const NavbarComp = () => {
                  <li className='p-4 w-full text-2xl font-cba my-5 text-left'>
                  <Link className='cursor-pointer ' to="book" spy={true} smooth={true} offset={10} duration={700}><NavLink to='/books'>Books</NavLink></Link>
                  </li>
-              </motion.ul>
+              </ul>
         
         </div>
   )
