@@ -1,5 +1,5 @@
 import React from 'react'
-import { motion} from "framer-motion"
+import {AnimatePresence, motion, useAnimation, useScroll, useTransform, useMotionValue} from "framer-motion"
 import me1 from "../assests/me1.png"
 import Footer from './FooterScreen'
 import { useRef } from "react";
@@ -10,7 +10,7 @@ import NavbarComp from './NavbarComp';
 function Section({ children }) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
-
+  
   return (
     <section ref={ref}>
       <span
@@ -29,24 +29,28 @@ function Section({ children }) {
 
 
 const HeroScreen = () => {
+    let  ref  = useRef()
+    let {scrollYProgress} = useScroll();
+    let scale = useTransform(scrollYProgress, [0,1],[1, 1.2])
+
   return (
     <>
-    <NavbarComp/>
-    <motion.div  exit={{backgroundColor: "#666666", y:-80, opacity:0.2}} transition={{duration:1}} className='w-full h-full flex flex-col items-center justify-center'>
+    <NavbarComp />
+    <motion.div ref={ref} exit={{backgroundColor: "#666666", y:-80, opacity:0.2}} transition={{duration:1}} className='w-full h-full flex flex-col items-center justify-center'>
           <motion.div  className="flex flex-row  justify-center items-center rounded-full  mt-4 p-4  border  shadow-lg shadow-gray-500/60  ">
           <motion.img  initial={{opacity:0, y:-100}} animate={{y:0, opacity:1}} transition={{ duration:2, type:"keyframes", stiffness:120}}  src={me1} alt="me1" className=" w-52 sm:w-72  h-full rounded-full border border-gray-200  hover:shadow-2xl"/>
             </motion.div>
 
-        <motion.div
+        <motion.div 
                  initial={{y:60,opacity:0,}}
                  animate={{ once:"true", y:10, opacity:1 }}
                  transition={{delay:1, duration:1}}
                  whileInView={{textShadow: "8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.25)"}}
-                  className='w-full h-full text-black py-6'>
+                  className='w-full h-full text-black py-6 '>
                  <h1 className='text-center text-sm md:text-3xl font-playfair text-gray-500'>Hi! I am Sumit Sahni a UI designer</h1>
-               <div className='w-full mx-auto sm:1/2 md:w-4/5 lg:w-3/5 xl:w-4/5'>
+               <motion.div  style={{scale}} className='w-full mx-auto sm:1/2 md:w-4/5 lg:w-3/5 xl:w-4/5'>
                  <h2 className='p-2 text-center text-3xl md:text-6xl font-playfair font-semibold text-gray-600'>Transforming ideas into interactive digital Realities</h2>  
-               </div>
+               </motion.div>
         </motion.div>
 
         <motion.div
