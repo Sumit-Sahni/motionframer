@@ -10,6 +10,7 @@ import room2 from "../assests/room2.jpg"
 import room3 from "../assests/room3.jpg"
 import boy from "../assests/boy.jpg"
 import popup from "../assests/popup.mp3"
+import { NavLink } from 'react-router-dom';
 
 
 function Section({ children }) {
@@ -66,6 +67,7 @@ const HeroScreen = () => {
        setTimeout(()=>{
           setTrigger(true)
        },2000)
+     
     },[])
 
   return (
@@ -89,21 +91,21 @@ const HeroScreen = () => {
                 {
                   trigger ? (
                     <motion.div
-                       initial={{x:-250,}}
-                       animate={{x:-10,}}
-                       transition={{delay:1, duration:1}}
+                       initial={{x:-250,y:-250}}
+                       animate={{x:0,y:-10}}
+                       transition={{duration:1}}
                        exit={{x:-250, delay:0, duration:0}}
-                       className='absolute hidden  left-0 w-60 h-auto lg:flex flex-row items-center justify-between -bottom-2'>
+                        className='absolute w-48 -top-[3rem] left-2 lg:left-0 lg:-top-14 lg:w-60 :lg:h-auto lg:flex flex-row items-center justify-between lg:-bottom-2'>
                         <motion.img 
                           initial={{x:-120}}
                           animate={{x:-10, rotate:[0,20]}}
-                          transition={{delay:2, duration:5, type:"spring", stiffness:300,damping:20}}
-                          src={boy} className='w-28 self-start relative -top-10  '
+                          transition={{delay:2,duration:2, type:"spring", stiffness:500,damping:20}}
+                          src={boy} className='w-8 sm:w-28 self-start relative lg:-top-2  '
                         />
-                        <div className='w-1/2 '>
-                          <h1 className='text-xl font-opensans'>Hey!! There</h1>  
-                          <h1 className='text-sm font-opensans'>Do Contact me</h1>  
-                          <button className='w-2 h-2 rounded-full text-slate-700 absolute -top-10 right-0 mx-3 cursor-pointer'onClick={()=>{setTrigger(false); play()}}>X</button>
+                        <div className='w-1/2  '>
+                          <h1 className='text-sm sm:text-xl font-opensans'>Hey!! There</h1>  
+                          <NavLink  className='text-sm sm:text-xl font-opensans'>Cover Letter</NavLink>
+                          <button className='w-2 h-2 rounded-full text-slate-700 absolute sm:bottom-32 mx-3 lg:top-[100px] cursor-pointer'onClick={()=>{setTrigger(false); play()}}>X</button>
                         </div>      
                     </motion.div>
                   
@@ -112,7 +114,7 @@ const HeroScreen = () => {
                </AnimatePresence>
      {/* BOY POP UP */}
 
-                 <h1 className='text-center text-sm md:text-3xl font-playfair text-gray-500'>Hi! I am Sumit Sahni a UI designer</h1>
+                 <h1 className='text-center text-sm md:text-3xl font-playfair text-gray-500 my-3'>Hi! I am Sumit Sahni a UI designer</h1>
                <motion.div  className='w-full mx-auto sm:1/2 md:w-4/5 lg:w-3/5 xl:w-4/5'>
                  <h2 className='p-2 text-center text-3xl md:text-6xl font-playfair font-semibold text-gray-700'>Transforming ideas into interactive digital Realities</h2>  
                </motion.div>
