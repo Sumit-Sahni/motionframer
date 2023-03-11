@@ -105,7 +105,7 @@ const HeroScreen = () => {
                         <div className='w-1/2   '>
                           <h1 className='text-[10px] sm:text-xl font-opensans'>Hey!! There</h1>  
                           <NavLink  className='text-[10px] sm:text-xl font-opensans'>Cover Letter</NavLink>
-                          <button className='w-2 h-2 rounded-full text-slate-700 absolute bottom-10 mx-3 lg:top-[100px] cursor-pointer'onClick={()=>{setTrigger(false); play()}}>X</button>
+                          <button className='w-2 h-2 rounded-full text-slate-700 absolute bottom-10 mx-3 lg:top-[120px] cursor-pointer'onClick={()=>{setTrigger(false); play()}}>X</button>
                         </div>      
                     </motion.div>
                   
