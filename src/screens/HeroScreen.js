@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import {AnimatePresence, motion,} from "framer-motion"
 import {CgIfDesign} from "react-icons/cg"
+import {TbHandClick} from "react-icons/tb"
 import me1 from "../assests/me1.png"
 import Footer from './FooterScreen'
 import { useRef } from "react";
@@ -133,7 +134,8 @@ const HeroScreen = () => {
         <motion.div
                  initial={{opacity:0}} whileInView={{y:0,opacity:1}} viewport={{once:'true'}} transition={{duration:1 ,delay:2}}
                   whileHover={{shadow: "8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.25)"}}
-                  className='w-[90%] mx-auto  sm:w-1/2 md:w-1/3 sm:mx-auto mt-10  text-center p-4 border border-1 hover:border-double  delay-550 hover:bg-gray-500 hover:text-white transition duration-700 ease-in-out mb-16 '>
+                  className='relative w-[90%] mx-auto  sm:w-1/2 md:w-1/3 sm:mx-auto mt-10  text-center p-4 border border-1 hover:border-double  delay-550 hover:bg-gray-500 hover:text-white transition duration-700 ease-in-out mb-16 '>
+                    <TbHandClick size={20} className='absolute left-1 top-1 ' />
                <h1>
                     <span className='w-96 '>
                     <p>Currently at Pune Maharashtra studying Master's in Computer Application, set to post graduate in May 2023.</p></span>
@@ -164,7 +166,7 @@ const HeroScreen = () => {
           <div className='w-[90%] px-9  sm:w-full  md:w-[53rem] md:h-auto  sm:py-8 sm:px-4  cursor-pointer'>
             <h1><spann className="text-2xl">S</spann>ervices</h1>
             <motion.hr
-             initial={{x:-50, opacity:0}}
+             initial={{x:-30, opacity:0}}
              whileInView={{x:0, opacity:1}}
              viewport={{once:'true'}}
              transition={{duration:5}}
