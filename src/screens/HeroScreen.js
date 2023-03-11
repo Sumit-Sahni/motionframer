@@ -40,25 +40,25 @@ function Section({ children }) {
 const slide = [
   {
    url :room1,
-   img: "https://unsplash.com/photos/jJT2r2n7lYA/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjc4NTM2OTYx&force=true&w=640",
+   img: "https://unsplash.com/photos/pqzRfBhd9r0/download?force=true&w=640",
    title:"UX Research",
    about:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, nam reiciendis!"
   },
   {
    url :room2,
-   img: "https://unsplash.com/photos/jJT2r2n7lYA/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjc4NTM2OTYx&force=true&w=640",
-   title:"Web Development",
+   img: "https://unsplash.com/photos/i1VQZsU86ok/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjc4NTQ4ODY1&force=true&w=640",
+   title:"Web Dev",
    about:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, nam reiciendis!"
   },
   {
    url :room3,
-     img: "https://unsplash.com/photos/jJT2r2n7lYA/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjc4NTM2OTYx&force=true&w=640",
+     img: "https://unsplash.com/photos/x9WGMWwp1NM/download?force=true&w=640",
      title:"App Design",
      about:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, nam reiciendis!"
   },
   {
     url :room1,
-     img: "https://unsplash.com/photos/jJT2r2n7lYA/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjc4NTM2OTYx&force=true&w=640",
+     img: "https://unsplash.com/photos/m_HRfLhgABo/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjc4NTQ4NjI5&force=true&w=640",
      title:"Web Design",
      about:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, nam reiciendis!"
   }
@@ -114,7 +114,7 @@ const HeroScreen = () => {
                           src={boy} className=' w-8 sm:w-28 self-start relative lg:-top-2  '
                         />
                         <div className='w-1/2   '>
-                          <h1 className='text-[10px] sm:text-xl font-opensans'>Hey!! There</h1>  
+                          <h1 className='text-[10px] sm:text-xl font-opensans'>Go to my</h1>  
                           <NavLink  className='text-[10px] sm:text-xl font-opensans'>Cover Letter</NavLink>
                           <button className='w-2 h-2 rounded-full text-slate-700 absolute bottom-10 mx-3 lg:top-[120px] cursor-pointer'onClick={()=>{setTrigger(false); play()}}>X</button>
                         </div>      
@@ -166,10 +166,10 @@ const HeroScreen = () => {
           <div className='w-[90%] px-9  sm:w-full  md:w-[53rem] md:h-auto  sm:py-8 sm:px-4  cursor-pointer'>
             <h1><spann className="text-2xl">S</spann>ervices</h1>
             <motion.hr
-             initial={{x:-30, opacity:0}}
+             initial={{x:150, opacity:0}}
              whileInView={{x:0, opacity:1}}
              viewport={{once:'true'}}
-             transition={{duration:5}}
+             transition={{duration:3}}
             className='w-24 border-1 border-rose-900 mx-a cursor-pointer'></motion.hr>
             <p className=' font-opensans text-sm py-2'>I aim towards combining my learnings of UI design to integrate diverse perspectives and a collaborative approach to the product innovation process.</p>
           </div>                 
@@ -183,13 +183,13 @@ const HeroScreen = () => {
                               whileInView={{opacity:1, x:0, y:0}}
                               viewport={{once:'true'}}
                               transition={{duration:0.5, delay:i*0.2}}
-                              className='w-32 h-28 sm:w-52 sm:h-52 md:w-[25rem] md:h-60 flex items-center justify-cente py-4'>
-                               <div style={{backgroundImage:`url(${item.img})`}} className='relative w-full h-full bg-no-repeat bg-cover'>
-                                <div className='grid items-center absolute w-32 h-28 sm:w-52 sm:h-52 md:w-[25rem] md:h-60  top-0 left-0 bg-[#12486c] opacity-60 hover:opacity-100  z-50'>
-                                    <div className='w-full p-4'>
+                              className='w-32 h-28 sm:w-52 sm:h-52 md:w-[25rem] md:h-60  flex items-center justify-cente py-8'>
+                               <div style={{backgroundImage:`url(${item.img})`}} className='relative w-full h-full bg-no-repeat bg-cover z-0 '>
+                                <div className='items-start absolute w-32 h-28 sm:w-52 sm:h-52 md:w-[25rem] md:h-60  hover:scale-125 hover: bg-[#545965]   hover:opacity-80  duration-200 z-50'>
+                                    <div className='h-10 sm:w-full p-4 '>
                                            <CgIfDesign size={60} color='white'/>
-                                           <h1 className='text-white text-2xl font-playfair font-bold'>{item.title}</h1>
-                                           <p className='text-white text-sm'>{item.about}</p>
+                                           <h1 className='text-white sm:text-2xl font-playfair font-bold'>{item.title}</h1>
+                                           <p className='text-white text-sm hidden sm:block'>{item.about}</p>
                                     </div>
                                  </div>
                                  

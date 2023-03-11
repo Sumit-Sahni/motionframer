@@ -25,7 +25,7 @@ const NavbarComp = () => {
                 <NavLink to='/work'>work</NavLink>
               </motion.ul>
               <div className=' md:hidden' onClick={handleNavbar}>
-                {!nav ? <AiOutlineClose size={30} className="cursor-pointer"/> :<AiOutlineMenu size={30} className="cursor-pointer"/> }
+                {!nav ? <AiOutlineClose size={30} className="cursor-pointer  animate-spin"/> :<AiOutlineMenu size={30} className="cursor-pointer"/> }
             
               </div>
           </div>
