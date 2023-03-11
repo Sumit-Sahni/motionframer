@@ -1,6 +1,5 @@
 import React , {useEffect, useRef, useState} from 'react'
 import {AnimatePresence, motion, useAnimation, useScroll, useTransform, useMotionValue} from "framer-motion"
-import { useInView } from "react-intersection-observer";
 import {BsDot} from "react-icons/bs"
 import apk from "../assests/House.apk"
 import room1 from "../assests/room1.jpg"
@@ -86,7 +85,7 @@ const UIWorks = () => {
                 className= "leading-8 mt-4 text-center sm:text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, nam reiciendis! Aspernatur commodi vel excepturi, repudiandae sint praesentium rerum iste laborum dignissimos, vitae tenetur reprehenderit hic quia saepe iure. Odio!
                 </motion.p>
                 <button className='hover:bg-gray-600 hover:border-2 hover:text-white bg-gray-400 text-white font-bold py-2 px-4 rounded-full mt-4'>
-                 <a href={apk}>Download</a>  
+                 <a href={apk} download={apk} >Download</a>  
                 </button>
             </div> 
            </div>

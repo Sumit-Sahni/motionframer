@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import {AnimatePresence, motion,} from "framer-motion"
+import {CgIfDesign} from "react-icons/cg"
 import me1 from "../assests/me1.png"
 import Footer from './FooterScreen'
 import { useRef } from "react";
@@ -37,26 +38,35 @@ function Section({ children }) {
 
 const slide = [
   {
-   url :room1
+   url :room1,
+   img: "https://unsplash.com/photos/jJT2r2n7lYA/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjc4NTM2OTYx&force=true&w=640",
+   title:"UX Research",
+   about:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, nam reiciendis!"
   },
   {
-   url :room2
+   url :room2,
+   img: "https://unsplash.com/photos/jJT2r2n7lYA/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjc4NTM2OTYx&force=true&w=640",
+   title:"Web Development",
+   about:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, nam reiciendis!"
   },
   {
-   url :room3
+   url :room3,
+     img: "https://unsplash.com/photos/jJT2r2n7lYA/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjc4NTM2OTYx&force=true&w=640",
+     title:"App Design",
+     about:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, nam reiciendis!"
   },
   {
-    url :room1
-   },
-   {
-    url :room2
-   },
+    url :room1,
+     img: "https://unsplash.com/photos/jJT2r2n7lYA/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjc4NTM2OTYx&force=true&w=640",
+     title:"Web Design",
+     about:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, nam reiciendis!"
+  }
 ]
 
 const HeroScreen = () => {
   const [trigger, setTrigger] = useState(false)
   const [value, setValue] = useState(true)
-
+ 
    
   const play = ()=>{
      new Audio(popup).play(value)
@@ -66,7 +76,7 @@ const HeroScreen = () => {
     useEffect(()=>{
        setTimeout(()=>{
           setTrigger(true)
-       },8000)
+       },1000)
      
     },[])
 
@@ -150,8 +160,19 @@ const HeroScreen = () => {
       
          {/* EXPERTISE */}
          
-          <section className=' w-full flex items-center p-12 '>
-                <div className='w-full p-1  sm:h-auto md:h-auto md:w-[80%] mx-auto   flex flex-row flex-wrap items-center justify-center  gap-4 '>
+          <section className=' w-full flex flex-col items-center sm:p-12 '>
+          <div className='w-[90%] px-9  sm:w-full  md:w-[53rem] md:h-auto  sm:py-8 sm:px-4  cursor-pointer'>
+            <h1><spann className="text-2xl">S</spann>ervices</h1>
+            <motion.hr
+             initial={{x:-50, opacity:0}}
+             whileInView={{x:0, opacity:1}}
+             viewport={{once:'true'}}
+             transition={{duration:5}}
+            className='w-24 border-1 border-rose-900 mx-a cursor-pointer'></motion.hr>
+            <p className=' font-opensans text-sm py-2'>I aim towards combining my learnings of UI design to integrate diverse perspectives and a collaborative approach to the product innovation process.</p>
+          </div>                 
+                <div className='w-full p-1  sm:h-auto md:h-auto md:w-[80%] mx-auto flex flex-row flex-wrap items-center justify-center  gap-4 '>
+         
                       {
                         slide.map(( item, i)=>{
                           return(
@@ -160,9 +181,17 @@ const HeroScreen = () => {
                               whileInView={{opacity:1, x:0, y:0}}
                               viewport={{once:'true'}}
                               transition={{duration:0.5, delay:i*0.2}}
-                             
-                              className='w-32 h-28 sm:w-52 sm:h-52 md:w-80 md:h-60 bg-cyan-600 flex items-center justify-center  shadow-[rgba(0, 0, 0, 0.25) 0px 25px 50px -12px]'>
-                                <h1 className='text-white text-3xl font-extralight text-center '>React Js</h1>
+                              className='w-32 h-28 sm:w-52 sm:h-52 md:w-[25rem] md:h-60 flex items-center justify-cente py-4'>
+                               <div style={{backgroundImage:`url(${item.img})`}} className='relative w-full h-full bg-no-repeat bg-cover'>
+                                <div className='grid items-center absolute w-32 h-28 sm:w-52 sm:h-52 md:w-[25rem] md:h-60  top-0 left-0 bg-[#12486c] opacity-60 hover:opacity-100  z-50'>
+                                    <div className='w-full p-4'>
+                                           <CgIfDesign size={60} color='white'/>
+                                           <h1 className='text-white text-2xl font-playfair font-bold'>{item.title}</h1>
+                                           <p className='text-white text-sm'>{item.about}</p>
+                                    </div>
+                                 </div>
+                                 
+                               </div>
                              </motion.div>
                           )
                         })
