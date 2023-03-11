@@ -66,7 +66,7 @@ const HeroScreen = () => {
     useEffect(()=>{
        setTimeout(()=>{
           setTrigger(true)
-       },2000)
+       },8000)
      
     },[])
 
@@ -95,17 +95,17 @@ const HeroScreen = () => {
                        animate={{x:0,y:-10}}
                        transition={{duration:1}}
                        exit={{x:-250, delay:0, duration:0}}
-                        className='absolute w-48 -top-[3rem] left-2 lg:left-0 lg:-top-14 lg:w-60 :lg:h-auto lg:flex flex-row items-center justify-between lg:-bottom-2'>
+                        className=' sm:hidden absolute w-48 -top-[3rem] left-2 lg:left-0 lg:-top-14 lg:w-60 :lg:h-auto lg:flex flex-row items-center justify-between lg:-bottom-2'>
                         <motion.img 
                           initial={{x:-120}}
                           animate={{x:-10, rotate:[0,20]}}
                           transition={{delay:2,duration:2, type:"spring", stiffness:500,damping:20}}
-                          src={boy} className='w-8 sm:w-28 self-start relative lg:-top-2  '
+                          src={boy} className=' w-8 sm:w-28 self-start relative lg:-top-2  '
                         />
-                        <div className='w-1/2  '>
-                          <h1 className='text-sm sm:text-xl font-opensans'>Hey!! There</h1>  
-                          <NavLink  className='text-sm sm:text-xl font-opensans'>Cover Letter</NavLink>
-                          <button className='w-2 h-2 rounded-full text-slate-700 absolute sm:bottom-32 mx-3 lg:top-[100px] cursor-pointer'onClick={()=>{setTrigger(false); play()}}>X</button>
+                        <div className='w-1/2   '>
+                          <h1 className='text-[10px] sm:text-xl font-opensans'>Hey!! There</h1>  
+                          <NavLink  className='text-[10px] sm:text-xl font-opensans'>Cover Letter</NavLink>
+                          <button className='w-2 h-2 rounded-full text-slate-700 absolute bottom-10 mx-3 lg:top-[100px] cursor-pointer'onClick={()=>{setTrigger(false); play()}}>X</button>
                         </div>      
                     </motion.div>
                   
@@ -161,7 +161,7 @@ const HeroScreen = () => {
                               viewport={{once:'true'}}
                               transition={{duration:0.5, delay:i*0.2}}
                              
-                              className='w-28 h-28 sm:w-52 sm:h-52 md:w-80 md:h-60 bg-cyan-600 flex items-center justify-center  shadow-[rgba(0, 0, 0, 0.25) 0px 25px 50px -12px]'>
+                              className='w-32 h-28 sm:w-52 sm:h-52 md:w-80 md:h-60 bg-cyan-600 flex items-center justify-center  shadow-[rgba(0, 0, 0, 0.25) 0px 25px 50px -12px]'>
                                 <h1 className='text-white text-3xl font-extralight text-center '>React Js</h1>
                              </motion.div>
                           )
