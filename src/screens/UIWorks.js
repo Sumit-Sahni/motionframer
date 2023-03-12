@@ -50,7 +50,7 @@ const UIWorks = () => {
     <motion.div  transition={{duration:1.3}} exit={{backgroundColor: "#666666", y:-100, opacity:0.2}} className='sm:w-full p-4 sm:h-auto flex flex-col lg:flex-row items-center justify-center sm:p-10'>
           <div className=' w-full h-72  lg:w-1/2 sm:h-auto lg:h-full flex flex-col justify-center items-center '>
             <motion.div 
-               className='w-32 sm:w-[10rem] sm:h-[33vh] md:w-[8rem] md:h-[33vh] lg:w-64  lg:h-[70vh] rounded-2xl ' style={{boxShadow:"rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset"}}>
+               className='w-32 sm:w-[10rem] sm:h-[25vh] md:w-[8rem] md:h-[33vh] lg:w-64  lg:h-[70vh] rounded-2xl ' style={{boxShadow:"rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset"}}>
                 <video src={Vid} width="full" height="full" controls autoPlay className='w-32 sm:w-60 lg:w-64 h-full overflow-hidden p-2 rounded-2xl'/>
             </motion.div>
           
