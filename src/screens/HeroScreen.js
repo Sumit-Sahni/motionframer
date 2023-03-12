@@ -58,8 +58,7 @@ const HeroScreen = () => {
     useEffect(()=>{
        setTimeout(()=>{
           setTrigger(true)
-       },1000)
-     
+       },3000) 
     },[])
 
   return (
@@ -87,7 +86,7 @@ const HeroScreen = () => {
                        animate={{x:0,y:-10}}
                        transition={{duration:1}}
                        exit={{x:-250, delay:0, duration:0}}
-                        className=' sm:hidden absolute w-48 -top-[3rem] left-2 lg:left-0 lg:-top-14 lg:w-60 :lg:h-auto lg:flex flex-row items-center justify-between lg:-bottom-2'>
+                        className=' sm:hidden absolute w-48 -top-[3rem] left-2 lg:left-0 lg:-top-14 lg:w-60 lg:h-48 lg:flex flex-row items-center justify-between lg:-bottom-2'>
                         <motion.img 
                           initial={{x:-120}}
                           animate={{x:-10, rotate:[0,20]}}
@@ -95,9 +94,8 @@ const HeroScreen = () => {
                           src={boy} className=' w-8 sm:w-28 self-start relative lg:-top-2  '
                         />
                         <div className='w-11/12'>
-                          <h1 className='text-[10px] sm:text-xl font-opensans'>Go to my</h1>  
-                          <NavLink  className='text-[10px] sm:text-xl font-opensans'>Cover Letter</NavLink>
-                          <button className='w-2 h-2 rounded-full text-slate-700 absolute bottom-10 mx-3 lg:top-[120px] cursor-pointer'onClick={()=>{setTrigger(false); play()}}>X</button>
+                          <NavLink to='/cover'  className='text-[10px] sm:text-xl font-opensans'>Cover Letter</NavLink>
+                          <button className='w-2 h-2 rounded-full text-slate-700 absolute bottom-10 mx-3 lg:top-[50px] cursor-pointer'onClick={()=>{setTrigger(false); play()}}>X</button>
                         </div>      
                     </motion.div>
                   
