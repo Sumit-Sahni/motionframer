@@ -55,13 +55,13 @@ const UIWorks = () => {
             </motion.div>
           
           </div>
-          <div className='w-full p-2  lg:w-1/2 sm:h-auto lg:h-full flex flex-col items-center justify-center sm:p-16 '>
+          <div className='w-full p-4  lg:w-1/2 sm:h-auto lg:h-full flex flex-col items-center justify-center sm:p-16 '>
             <div className='flex flex-col  items-center sm:block'>
                <motion.h1 
                 initial={{x:400, scale:0}}
                 animate={{x:0, scale:1}}
                 transition={{duration:1.2, delay:1}}
-               className='text-3xl text-center sm:text-6xl w-full font-opensans font-extralight text-gray-600 lg:text-left'>React Native Project</motion.h1>
+               className='py-4 sm:p-0 text-3xl text-center sm:text-6xl w-full font-opensans font-extralight text-gray-600 lg:text-left'>React Native Project</motion.h1>
                <motion.p 
                 initial={{y:100}}
                 animate={{y:0}}
@@ -101,7 +101,7 @@ const UIWorks = () => {
                  }
             </div>
           </div>
-          <div className='w-full p-2  lg:w-1/2 sm:h-auto lg:h-full flex flex-col items-center justify-center sm:p-16 '>
+          <div className='w-full p-3  lg:w-1/2 sm:h-auto lg:h-full flex flex-col items-center justify-center sm:p-16 '>
             <div className='flex flex-col  items-center sm:block'>
                <motion.h1 
                 initial={{x:400, scale:0}}
