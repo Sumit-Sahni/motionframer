@@ -50,7 +50,7 @@ const UIWorks = () => {
     <motion.div  transition={{duration:1.3}} exit={{backgroundColor: "#666666", y:-100, opacity:0.2}} className='sm:w-full p-4 sm:h-auto flex flex-col lg:flex-row items-center justify-center sm:p-10'>
           <div className=' w-full h-72  lg:w-1/2 sm:h-auto lg:h-full flex flex-col justify-center items-center '>
             <motion.div 
-               className='w-32 sm:w-60 lg:w-64 h-[70vh] rounded-2xl ' style={{boxShadow:"rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset"}}>
+               className='w-32 sm:w-[10rem] sm:h-[33vh] md:w-[8rem] md:h-[33vh] lg:w-64  lg:h-[70vh] rounded-2xl ' style={{boxShadow:"rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset"}}>
                 <video src={Vid} width="full" height="full" controls autoPlay className='w-32 sm:w-60 lg:w-64 h-full overflow-hidden p-2 rounded-2xl'/>
             </motion.div>
           
@@ -66,15 +66,21 @@ const UIWorks = () => {
                 initial={{y:100}}
                 animate={{y:0}}
                 transition={{duration:1.2,  delay:1}}
-                className= "leading-8 mt-4 text-center sm:text-left">LoremAA ipsum dolor sit amet consectetur adipisicing elit. Nostrum, nam reiciendis! Aspernatur commodi vel excepturi, repudiandae sint praesentium rerum iste laborum dignissimos, vitae tenetur reprehenderit hic quia saepe iure. Odio!
+                className= "leading-8 mt-4 text-center text-sm sm:text-left w-[90%] sm:w-full">For my recent college mini project, I used React Native as the primary framework to build a mobile application.The goal of my project was to build a mobile application that would allow users to place food order on app. To accomplish this, I used React Native's powerful UI components to create an intuitive and user-friendly interface.Overall, my experience with React Native was very positive. The framework allowed me to build a high-quality mobile application.
                 </motion.p>
-                <button className='hover:bg-gray-600 hover:border-2 hover:text-white bg-gray-400 text-white font-bold py-2 px-4 rounded-full mt-4'>
-                 <a href={apk} download={apk} >Download</a>  
-                </button>
+                <motion.button
+                 initial={{opacity:0}}
+                 whileInView={{opacity:1}}
+                 viewport={{once:"true"}}
+                 transition={{duration:2, delay:2.5}}
+                className='hover:bg-gray-600 hover:border-2 hover:text-white bg-gray-400 text-white font-bold py-2 px-4 rounded-full mt-4'>
+                 <a href={'#'} >Download Soon</a>  
+                </motion.button>
             </div> 
            </div>
       </motion.div>
-      <motion.div  transition={{duration:1.3}} exit={{backgroundColor: "#666666", y:-100, opacity:0.2}} className='sm:w-full p-4 sm:h-auto flex flex-col lg:flex-row items-center justify-center sm:p-10'>
+         <hr className='w-[80%] mx-auto border-1 border-slate-200 mx-a cursor-pointer p-8'></hr>
+      <motion.div  transition={{duration:1.3}} exit={{backgroundColor: "#666666", y:-100, opacity:0.2}} className='sm:w-full p-4 sm:h-auto flex flex-col lg:flex-row-reverse items-center justify-center sm:p-10'>
           <div className=' w-full h-72  lg:w-1/2 sm:h-auto lg:h-full flex flex-col justify-center items-center '>
             <motion.div 
                initial={{scale:0, opacity:0}} animate={{scale:1, opacity:1}} transition={{duration:1, delay:1}}
@@ -101,16 +107,22 @@ const UIWorks = () => {
                 initial={{x:400, scale:0}}
                 animate={{x:0, scale:1}}
                 transition={{duration:1.2, delay:1}}
-               className='text-3xl text-center sm:text-6xl w-full font-opensans font-extralight text-gray-600 lg:text-left'>React Native Project</motion.h1>
+               className='text-3xl text-center sm:text-6xl w-full font-opensans font-extralight text-gray-600 lg:text-left'>React Native UI</motion.h1>
                <motion.p 
                 initial={{y:100}}
                 animate={{y:0}}
                 transition={{duration:1.2,  delay:1}}
-                className= "leading-8 mt-4 text-center sm:text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, nam reiciendis! Aspernatur commodi vel excepturi, repudiandae sint praesentium rerum iste laborum dignissimos, vitae tenetur reprehenderit hic quia saepe iure. Odio!
+                className= "leading-8 mt-4 text-center text-sm sm:text-left">Goal was to design an attractive and user-friendly interface that would be intuitive and easy to navigate.
+                To achieve this, I implemented a range of UI elements in React Native, including buttons, text input fields, dropdown menus, and other common UI components. I also used React Native's styling features to create a connected and visually appealing design for the app.
                 </motion.p>
-                <button className='hover:bg-gray-600 hover:border-2 hover:text-white bg-gray-400 text-white font-bold py-2 px-4 rounded-full mt-4'>
+                <motion.button
+                 initial={{opacity:0}}
+                 whileInView={{opacity:1}}
+                 viewport={{once:"true"}}
+                 transition={{duration:2, delay:2.5}}
+                  className='hover:bg-gray-600 hover:border-2 hover:text-white bg-gray-400 text-white font-bold py-2 px-4 rounded-full mt-4'>
                  <a href={apk} download={apk} >Download</a>  
-                </button>
+                </motion.button>
             </div> 
            </div>
       </motion.div>
