@@ -64,8 +64,8 @@ const HeroScreen = () => {
   return (
     <>
     <NavbarComp />
-    <motion.div exit={{backgroundColor: "#666666", y:-80, opacity:1}} transition={{duration:1.2}} className='w-full h-auto flex flex-col items-center justify-center'>
-          <motion.div   className="flex flex-row  justify-center items-center rounded-full  mt-4 p-4   border  shadow-lg shadow-gray-500/60  ">
+    <motion.div exit={{scale:1.1, opacity:1, opacity:0}} transition={{duration:0.5,delay:0.5}} className=' w-full h-auto flex flex-col items-center justify-center'>
+          <motion.div   className="bg-gradient-to-r from-indigo-200 via-purple-200 to-gray-500 flex flex-row  justify-center items-center rounded-full  mt-4 p-2   border  shadow-lg shadow-gray-500/60  ">
           <motion.img  initial={{opacity:0, y:-100}} animate={{y:0, opacity:1}} transition={{ duration:2, type:"keyframes", stiffness:120}}  src={me1} alt="me1" className=" w-52 sm:w-72  h-full rounded-full border border-gray-200  hover:shadow-2xl"/>
             </motion.div>
 
@@ -113,7 +113,7 @@ const HeroScreen = () => {
         <motion.div
                  initial={{opacity:0}} whileInView={{y:0,opacity:1}} viewport={{once:'true'}} transition={{duration:1 ,delay:2}}
                   whileHover={{shadow: "8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.25)"}}
-                  className='relative w-[90%] mx-auto  sm:w-1/2 md:w-1/3 sm:mx-auto mt-10  text-center p-4 border border-1 hover:border-double  delay-550 hover:bg-gray-500 hover:text-white transition duration-700 ease-in-out mb-16 '>
+                  className='relative w-[90%] mx-auto  sm:w-1/2 md:w-1/3 sm:mx-auto mt-10  text-center p-4  hover:border-double  delay-550 hover:bg-gray-500 hover:text-white transition duration-700 ease-in-out mb-16 '>
                     <TbHandClick size={20} className='absolute left-1 top-1 cursor-pointer ' />
                <h1>
                     <span className='w-96 '>

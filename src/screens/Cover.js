@@ -5,11 +5,6 @@ import React from 'react'
 import { useState } from 'react'
 import {AiOutlineClose,AiOutlineMenu } from 'react-icons/ai'
 import { NavLink } from 'react-router-dom'
-import {Link} from "react-scroll"
-
-
-
-
 
 
 
@@ -38,8 +33,10 @@ import {Link} from "react-scroll"
       <motion.div
          initial={{opacity: 0, scale:3}}
          animate={{opacity: 1, scale:1}}
-         transition={{ duration:2}}
-         exit={{backgroundColor: "#666666", y:-200, opacity:0.2}} className='bg-slate-100 sm:w-full p-4 sm:h-auto flex flex-col lg:flex-row items-center justify-center sm:p-10'>
+         transition={{ duration:2, delay:0.2}}
+         exit={{x:-50, opacity:0.2}}
+         
+         className='bg-slate-100 sm:w-full p-4 sm:h-auto flex flex-col lg:flex-row items-center justify-center sm:p-10'>
           <div className=' sm:w-[80%] mx-auto' >
             <div className='pb-5'>
               <p> <span className='text-sm sm:text-4xl'>D</span>ear Hiring Manager,</p>

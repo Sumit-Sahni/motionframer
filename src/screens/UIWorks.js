@@ -79,6 +79,7 @@ const UIWorks = () => {
             </div> 
            </div>
       </motion.div>
+      
          <hr className='w-[80%] mx-auto border-1 border-slate-200 mx-a cursor-pointer p-8'></hr>
       <motion.div  transition={{duration:1.3}} exit={{backgroundColor: "#666666", y:-100, opacity:0.2}} className='sm:w-full p-4 sm:h-auto flex flex-col lg:flex-row-reverse items-center justify-center sm:p-10'>
           <div className=' w-full h-72  lg:w-1/2 sm:h-auto lg:h-full flex flex-col justify-center items-center '>
