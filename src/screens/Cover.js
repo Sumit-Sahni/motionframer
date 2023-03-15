@@ -1,7 +1,7 @@
 import Logo from "../assests/Logo.jpg"
 import {motion } from "framer-motion"
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import {Link } from 'react-router-dom'
 
 
 
@@ -14,7 +14,7 @@ import { NavLink } from 'react-router-dom'
           className='w-full h-[80px] z-10  sticky bg-gradient-to-r from-green-300 via-blue-500 to-purple-600'>
           <div className='px-12 flex justify-between items-center w-full h-full'>
              <motion.div initial={{x:-100}} animate={{x:0}} transition={{duration:1 ,delay:1}} className='flex items-center'>
-                  <NavLink to="/"><img src={Logo} alt='logo' width={40}></img></NavLink>
+                  <Link to="/"><img src={Logo} alt='logo' width={40}></img></Link>
              </motion.div>
           </div>
          
@@ -53,7 +53,7 @@ import { NavLink } from 'react-router-dom'
             <div className='py-5'>
                   <p>Sincerely,</p>
                   <p>Sumit Sahni</p>
-                  <NavLink href={"https://symut-sahni-f42c7f.netlify.app/"}>Portfolio</NavLink>
+                  <Link to="https://symut-sahni-f42c7f.netlify.app/">Portfolio</Link>
             </div>
           </div>
       </motion.div>

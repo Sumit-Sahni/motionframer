@@ -10,7 +10,7 @@ import room2 from "../assests/room2.jpg"
 import room3 from "../assests/room3.jpg"
 import boy from "../assests/boy.jpg"
 import popup from "../assests/popup.mp3"
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 
@@ -92,7 +92,7 @@ const HeroScreen = () => {
                           src={boy} className=' w-8 sm:w-28 self-start relative lg:-top-2  '
                         />
                         <div className='w-11/12'>
-                          <NavLink to='/cover'  className='text-[10px] sm:text-xl font-opensans'>Cover Letter</NavLink>
+                          <Link to='/cover'  className='text-[10px] sm:text-xl font-opensans'>Cover Letter</Link>
                           <button className='w-2 h-2 rounded-full text-slate-700 absolute bottom-10 mx-3 lg:top-[50px] cursor-pointer'onClick={()=>{setTrigger(false); play(); setValue(false)}}>X</button>
                         </div>      
                     </motion.div>
@@ -102,7 +102,7 @@ const HeroScreen = () => {
                </AnimatePresence>
      {/* BOY POP UP */}
 
-                 <h1 className='text-center text-sm md:text-3xl font-playfair text-gray-500 my-3'>Hi! I am <u className='font-bold'><NavLink to="/me"> <span className=' lg:text-3xl'>Sumit Sahni,</span></NavLink></u> a UI designer</h1>
+                 <h1 className='text-center text-sm md:text-3xl font-playfair text-gray-500 my-3'>Hi! I am <u className='font-bold'><Link to="/me"> <span className=' lg:text-3xl'>Sumit Sahni,</span></Link></u> a UI designer</h1>
                <motion.div  className='w-full mx-auto sm:1/2 md:w-4/5 lg:w-3/5 xl:w-4/5'>
                  <h2 className='p-2 text-center text-3xl md:text-6xl font-playfair font-semibold text-gray-700'>Transforming ideas into interactive digital Realities</h2>  
                </motion.div>
@@ -183,12 +183,11 @@ const HeroScreen = () => {
                     <div className='text-xl md:text-3xl font-thin px-4 md:px-12 text-center '>
                        <p>
                        Thanks for checking out my work! 🙌🏻
-                       tap to know more about <u><NavLink href={"/"} className='text-red-600 font-semibold' >me</NavLink></u> or look at my <u><NavLink href="https://drive.google.com/file/d/1lxEePzFNT4mQQsCDWHg9bBLsgTXiXSjc/view?usp=share_link" className='text-red-600 font-semibold'>resume!</NavLink></u>
+                       tap to know more about <u><Link to="/" className='text-red-600 font-semibold' >me</Link></u> or look at my <u><Link to="https://drive.google.com/file/d/1lxEePzFNT4mQQsCDWHg9bBLsgTXiXSjc/view?usp=share_link" className='text-red-600 font-semibold'>resume!</Link></u>
                        </p>
                     </div>
               </div>    
         </section>
-       
         <Footer/>
     </motion.div>
     </>
