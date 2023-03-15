@@ -1,5 +1,5 @@
 import React from 'react'
-import pic from "../assests/loading.gif"
+import pic from "../assests/load.svg"
 
 import { motion} from "framer-motion";
 

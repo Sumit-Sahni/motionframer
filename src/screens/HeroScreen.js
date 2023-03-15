@@ -92,7 +92,7 @@ const HeroScreen = () => {
                           src={boy} className=' w-8 sm:w-28 self-start relative lg:-top-2  '
                         />
                         <div className='w-11/12'>
-                          <Link to='/cover'  className='text-[10px] sm:text-xl font-opensans'>Cover Letter</Link>
+                          <Link to='/cover'  className='text-[10px] sm:text-xl font-comfort '>Cover Letter</Link>
                           <button className='w-2 h-2 rounded-full text-slate-700 absolute bottom-10 mx-3 lg:top-[50px] cursor-pointer'onClick={()=>{setTrigger(false); play(); setValue(false)}}>X</button>
                         </div>      
                     </motion.div>
@@ -102,9 +102,9 @@ const HeroScreen = () => {
                </AnimatePresence>
      {/* BOY POP UP */}
 
-                 <h1 className='text-center text-sm md:text-3xl font-playfair text-gray-500 my-3'>Hi! I am <u className='font-bold'><Link to="/me"> <span className=' lg:text-3xl'>Sumit Sahni,</span></Link></u> a UI designer</h1>
+                 <h1 className='text-center text-sm md:text-3xl font-playfair text-gray-500 my-3'>Hey! I am <u className='font-bold'><Link to="/me"> <span className=' lg:text-3xl'>Sumit Sahni,</span></Link></u> a UI designer</h1>
                <motion.div  className='w-full mx-auto sm:1/2 md:w-4/5 lg:w-3/5 xl:w-4/5'>
-                 <h2 className='p-2 text-center text-3xl md:text-6xl font-playfair font-semibold text-gray-700'>Transforming ideas into interactive digital Realities</h2>  
+                 <h2 className='p-2 text-center text-3xl md:text-6xl font-comfort  text-gray-700'>Transforming ideas into interactive digital <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-700 font-bold to-pink-600 '>Realities</span></h2>  
                </motion.div>
         </motion.div>
 
@@ -163,7 +163,7 @@ const HeroScreen = () => {
                                     <div className='h-10 sm:w-full p-4 '>
                                            <CgIfDesign size={60} color='white'/>
                                            <h1 className='text-white sm:text-2xl font-playfair font-bold'>{item.title}</h1>
-                                           <p className='text-white text-sm hidden sm:block'>{item.about}</p>
+                                           <p className='text-white text-sm hidden sm:block font-comfort py-2'>{item.about}</p>
                                     </div>
                                  </div>
                                  

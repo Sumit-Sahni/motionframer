@@ -53,7 +53,7 @@ import {Link } from 'react-router-dom'
             <div className='py-5'>
                   <p>Sincerely,</p>
                   <p>Sumit Sahni</p>
-                  <Link to="https://symut-sahni-f42c7f.netlify.app/">Portfolio</Link>
+                  <Link to="https://sumit-sahni.onrender.com">Portfolio</Link>
             </div>
           </div>
       </motion.div>

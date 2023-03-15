@@ -7,8 +7,7 @@ import room2 from "../assests/room2.jpg"
 import room3 from "../assests/room3.jpg"
 import Vid  from "../assests/vid.mp4"
 import {AiOutlineClose,AiOutlineMenu } from 'react-icons/ai'
-import { NavLink } from 'react-router-dom'
-import {Link} from "react-scroll"
+import {Link} from 'react-router-dom'
 import Logo from  "../assests/Logo.jpg"
 
 
@@ -43,11 +42,11 @@ const UIWorks = () => {
           className='w-full h-[80px] z-10  sticky bg-gradient-to-r from-green-300 via-blue-500 to-purple-600'>
           <div className='px-12 flex justify-between items-center w-full h-full'>
              <motion.div initial={{x:-100}} animate={{x:0}} transition={{duration:1 ,delay:2}} className='flex items-center'>
-                  <NavLink to="/"><img src={Logo} alt='logo' width={40}></img></NavLink>
+                  <Link to="/"><img src={Logo} alt='logo' width={40}></img></Link>
              </motion.div>
               <motion.ul  initial={{opacity:0}} animate={{opacity:1}} transition={{duration:1}} className='hidden md:flex items-center text-xl  mx-4 '>
-                <NavLink className="mx-8" to='/cover'>Cover</NavLink>
-                <NavLink to='/work'>work</NavLink>
+                <Link className="mx-8" to='/cover'>Cover</Link>
+                <Link to='/work'>work</Link>
               </motion.ul>
               <div className=' md:hidden' onClick={handleNavbar}>
                 {!nav ? <AiOutlineClose size={30} className="cursor-pointer "/> :<AiOutlineMenu size={30} className="cursor-pointer"/> }
@@ -57,11 +56,11 @@ const UIWorks = () => {
          
           <ul  className={nav ? "hidden" :  ` absolute bg-black text-white w-full h-[800vh]  px-8 md:hidden text-3xl`}>
           <li className='p-4 w-full text-2xl font-cba my-5 text-left'>
-                <NavLink to='/cover'>Cover</NavLink>
+                <Link to='/cover'>Cover</Link>
                  </li>
                  
                  <li className='p-4 w-full text-2xl font-cba my-5 text-left'>
-                  <NavLink to={'/work'}>Work</NavLink>
+                  <Link to={'/work'}>Work</Link>
                  </li>
 
                  <li className='p-4 w-full text-2xl font-cba my-5 text-left'>
@@ -78,12 +77,12 @@ const UIWorks = () => {
           
           </div>
           <div className='w-full   lg:w-1/2 sm:h-auto lg:h-full flex flex-col items-center justify-center sm:p-16 '>
-            <div className='flex flex-col  items-center sm:block'>
+            <div className='flex flex-col  items-center sm:block w-full  p-4'>
                <motion.h1 
                 initial={{x:400, scale:0}}
                 animate={{x:0, scale:1}}
                 transition={{duration:1.2, delay:1}}
-               className='py-4 self sm:p-0 text-3xl px-4   sm:text-left sm:text-6xl w-full font-opensans font-extralight  lg:text-left text-white'>React Native Project</motion.h1>
+                className='py-4 self sm:p-0 text-3xl px-4   sm:text-left sm:text-5xl  font-comfort font-extralight  lg:text-left text-white '>React Native Project</motion.h1>
                <motion.p 
                 initial={{y:100}}
                 animate={{y:0}}
@@ -96,7 +95,7 @@ const UIWorks = () => {
                  viewport={{once:"true"}}
                  transition={{duration:2, delay:2.5}}
                 className='hover:bg-gray-600 mx-4 sm:mx-0 hover:border-2 self-start  hover:text-white bg-gray-400 text-white font-bold py-2 px-4 rounded-full mt-4'>
-                 <NavLink href={"/"}  >Download Soon</NavLink>  
+                 <Link href={"/"}  >Download Soon</Link>  
                 </motion.button>
             </div> 
            </div>
@@ -125,7 +124,7 @@ const UIWorks = () => {
                  }
             </div>
           </div>
-          <div className='w-full p-3  lg:w-1/2 sm:h-auto lg:h-full flex flex-col items-center justify-center sm:p-16  '>
+          <div className='w-full p-4  lg:w-1/2 sm:h-auto lg:h-full flex flex-col items-center justify-center sm:p-16 '>
             <div className='flex flex-col  items-center sm:block'>
                <motion.h1 
                 initial={{x:400, scale:0}}
@@ -145,7 +144,7 @@ const UIWorks = () => {
                  viewport={{once:"true"}}
                  transition={{duration:2, delay:2.5}}
                   className='hover:bg-gray-600 hover:border-2 self-start mx-4 sm:mx-0 hover:text-white bg-gray-400 text-white font-bold py-2 px-4 rounded-full mt-4'>
-                 <NavLink href={apk} download={apk} >Download</NavLink>  
+                 <Link href={apk} download={apk} >Download</Link>  
                 </motion.button>
             </div> 
            </div>

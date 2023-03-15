@@ -28,6 +28,7 @@ module.exports = {
         fontFamily: {
           playfair: ["Playfair Display", "serif"],
           opensans: ["Open Sans", "sans-serif"],
+          comfort:["Comfortaa", "cursive"]
         },
         content: {
           brush: "url('./assets/brush.png')",
