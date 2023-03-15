@@ -104,7 +104,7 @@ const HeroScreen = () => {
 
                  <h1 className='text-center text-sm md:text-3xl font-playfair text-gray-500 my-3'>Hey! I am <u className='font-bold'><Link to="/me"> <span className=' lg:text-3xl'>Sumit Sahni,</span></Link></u> a UI designer</h1>
                <motion.div  className='w-full mx-auto sm:1/2 md:w-4/5 lg:w-3/5 xl:w-4/5'>
-                 <h2 className='p-2 text-center text-3xl md:text-6xl font-comfort  text-gray-700'>Transforming ideas into interactive digital <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-700 font-bold to-pink-600 '>Realities</span></h2>  
+                 <h2 className='p-2 text-center text-3xl md:text-6xl font-comfort  text-gray-700'>Transforming ideas into interactive digital<br/> <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-700 font-bold to-pink-600 '>Realities</span></h2>  
                </motion.div>
         </motion.div>
 
