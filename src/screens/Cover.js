@@ -1,26 +1,17 @@
 import Logo from "../assests/Logo.jpg"
 import {motion } from "framer-motion"
-import NavbarComp from './NavbarComp'
 import React from 'react'
-import { useState } from 'react'
-import {AiOutlineClose,AiOutlineMenu } from 'react-icons/ai'
 import { NavLink } from 'react-router-dom'
 
 
 
  const Cover = () => {
-  const [nav, setNav] = useState(true)
-  const handleNavbar = () =>{
-     setNav(!nav)
-  }
+
   return (
     <>
-      {/* <NavbarComp/>
-      
-      */}
 
-<div
-          className='w-full h-[80px] z-10  sticky'>
+       <div
+          className='w-full h-[80px] z-10  sticky bg-gradient-to-r from-green-300 via-blue-500 to-purple-600'>
           <div className='px-12 flex justify-between items-center w-full h-full'>
              <motion.div initial={{x:-100}} animate={{x:0}} transition={{duration:1 ,delay:1}} className='flex items-center'>
                   <NavLink to="/"><img src={Logo} alt='logo' width={40}></img></NavLink>
@@ -30,18 +21,18 @@ import { NavLink } from 'react-router-dom'
           
         </div>
 
-      <motion.div
+       <motion.div
          initial={{opacity: 0, scale:3}}
          animate={{opacity: 1, scale:1}}
          transition={{ duration:2, delay:0.2}}
-         exit={{x:-50, opacity:0.2}}
+         exit={{y:-50, opacity:0.2}}
          
-         className='bg-slate-100 sm:w-full p-4 sm:h-auto flex flex-col lg:flex-row items-center justify-center sm:p-10'>
+         className='bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 sm:w-full  p-4  flex flex-col lg:flex-row items-center justify-center sm:p-10 w-full sm:h-[100vh] font-medium'>
           <div className=' sm:w-[80%] mx-auto' >
             <div className='pb-5'>
               <p> <span className='text-sm sm:text-4xl'>D</span>ear Hiring Manager,</p>
             </div>
-            <div className='md:w-[80%]  leading-8 '>
+            <div className='md:w-[80%]  leading-8 font-opensans '>
               <p>I am writing to express my interest in the Front-end Developer position at your company. As a recent graduate
                   in Computer Science with a passion for front-end development, I believe that I would be an excellent fit for
                   this role.<br/>
@@ -62,7 +53,7 @@ import { NavLink } from 'react-router-dom'
             <div className='py-5'>
                   <p>Sincerely,</p>
                   <p>Sumit Sahni</p>
-                  <a href={"https://symut-sahni-f42c7f.netlify.app/"}>Portfolio</a>
+                  <NavLink href={"https://symut-sahni-f42c7f.netlify.app/"}>Portfolio</NavLink>
             </div>
           </div>
       </motion.div>

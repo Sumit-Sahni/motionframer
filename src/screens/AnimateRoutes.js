@@ -8,7 +8,6 @@ import Cover  from "./Cover";
 
 function AnimatedRoutes() {
   const location = useLocation();
-  console.log(location);
   return (
     <AnimatePresence  >
       <Routes key={location.pathname} location={location}>
