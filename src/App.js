@@ -5,7 +5,7 @@ import Loading from "./screens/Loading"
 
 
 const App = ()=> {
-  const[trigger, setTrigger] = useState(false)
+  const[trigger, setTrigger] = useState(true)
 
    useEffect(()=>{
       setTimeout(()=>{
