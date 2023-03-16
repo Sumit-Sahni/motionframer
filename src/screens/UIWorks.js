@@ -130,7 +130,7 @@ const UIWorks = () => {
                 initial={{x:400, scale:0}}
                 animate={{x:0, scale:1}}
                 transition={{duration:1.2, delay:1}}
-               className='text-3xl px-4 sm:px-0 sm:text-6xl w-full font-opensans font-extralight text-white lg:text-left'>React Native UI</motion.h1>
+               className='text-3xl px-4 sm:px-0 sm:text-6xl w-full  font-comfort font-extralight text-white lg:text-left'>React Native UI</motion.h1>
                <motion.p 
                 initial={{y:100}}
                 animate={{y:0}}

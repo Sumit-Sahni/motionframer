@@ -103,7 +103,7 @@ const HeroScreen = () => {
      {/* BOY POP UP */}
 
                  <h1 className='text-center text-sm md:text-3xl font-playfair text-gray-500 my-3'>Hey! I am <u className='font-bold'><Link to="/me"> <span className=' lg:text-3xl'>Sumit Sahni,</span></Link></u> a UI designer</h1>
-               <motion.div  className='w-full mx-auto sm:1/2 md:w-4/5 lg:w-3/5 xl:w-4/5'>
+                 <motion.div  className='w-full mx-auto sm:1/2 md:w-4/5 lg:w-3/5 xl:w-4/5'>
                  <h2 className='p-2 text-center text-3xl md:text-6xl font-comfort  text-gray-700'>Transforming ideas into interactive digital<br/> <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-700 font-bold to-pink-600 '>Realities</span></h2>  
                </motion.div>
         </motion.div>
@@ -139,14 +139,15 @@ const HeroScreen = () => {
       
          {/* EXPERTISE */}
          
-          <section className=' w-full flex flex-col items-center sm:p-12 '>
+          <section className=' w-full  flex flex-col items-center sm:p-12 border-2'>
+          
           <div className='w-[90%] px-9  sm:w-full  md:w-[53rem] md:h-auto  sm:py-8 sm:px-4  cursor-pointer'>
             <h1><span className="text-2xl">S</span>ervices</h1>
             <hr
             className='w-24 border-1 border-rose-900 mx-a cursor-pointer'></hr>
             <p className=' font-opensans text-sm py-2'>Create visually stunning, user-friendly websites with our expert frontend development services, including custom UX design, pixel-perfect coding, responsive design, cross-browser testing, optimization, accessibility testing, and ongoing maintenance and support.</p>
           </div>                 
-                <div className='w-full p-1  sm:h-auto md:h-auto md:w-[80%] mx-auto flex flex-row flex-wrap items-center justify-center  gap-4 '>
+                <div className='w-full  p-1  md:w-[80%] mx-auto flex flex-row flex-wrap items-center justify-center  gap-4 '>
          
                       {
                         slide.map(( item, i)=>{
