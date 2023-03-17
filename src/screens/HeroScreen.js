@@ -141,12 +141,12 @@ const HeroScreen = () => {
       
          {/* EXPERTISE */}
          
-          <section className=' w-full  flex flex-col items-center sm:p-12 border-2'>
+          <section className=' w-full  flex flex-col items-center sm:p-12'>
           
           <div className='w-[90%] px-9  sm:w-full  md:w-[53rem] md:h-auto  sm:py-8 sm:px-4  cursor-pointer'>
             <h1><span className="text-2xl">S</span>ervices</h1>
             <hr
-            className='w-24 border-1 border-rose-900 mx-a cursor-pointer'></hr>
+            className='w-24  mx-a cursor-pointer'></hr>
             <p className=' font-opensans text-sm py-2'>Create visually stunning, user-friendly websites with our expert frontend development services, including custom UX design, pixel-perfect coding, responsive design, cross-browser testing, optimization, accessibility testing, and ongoing maintenance and support.</p>
           </div>                 
                 <div className='w-full  p-1  md:w-[80%] mx-auto flex flex-row flex-wrap items-center justify-center  gap-4 '>
