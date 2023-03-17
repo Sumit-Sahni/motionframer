@@ -45,17 +45,19 @@ const slide = [
 
 const HeroScreen = () => {
   const [trigger, setTrigger] = useState(false)
-  const [value, setValue] = useState(true)
+  // const [value, setValue] = useState(true)
 
-  const play = ()=>{
-     new Audio(popup).play(value)
-     value(false)
+  const play1 = ()=>{
+     const audio =  new Audio(popup)
+     audio.play(true)
+     console.log("Played")
   }
 
     useEffect(()=>{
        setTimeout(()=>{
+        play1();
           setTrigger(true)
-       },3000) 
+       },1000) 
     },[])
    
 
@@ -93,7 +95,7 @@ const HeroScreen = () => {
                         />
                         <div className='w-11/12'>
                           <Link to='/cover'  className='text-[10px] sm:text-xl font-comfort '>Cover Letter</Link>
-                          <button className='w-2 h-2 rounded-full text-slate-700 absolute bottom-10 mx-3 lg:top-[50px] cursor-pointer'onClick={()=>{setTrigger(false); play(); setValue(false)}}>X</button>
+                          <button className='w-2 h-2 rounded-full text-slate-700 absolute bottom-10 mx-3 lg:top-[50px] cursor-pointer'onClick={()=>{setTrigger(false); play1();}}>X</button>
                         </div>      
                     </motion.div>
                   

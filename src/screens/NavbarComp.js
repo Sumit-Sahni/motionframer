@@ -35,7 +35,7 @@ const NavbarComp = () => {
             </li>
                  
                  <li className='p-4 w-full text-2xl font-cba my-5 text-left'>
-                 <Link to="/cover" className=' cursor-pointer'>Work</Link>                 
+                 <Link to="/work" className=' cursor-pointer'>Work</Link>                 
                  </li>
               </ul>
         

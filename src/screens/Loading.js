@@ -1,5 +1,6 @@
 import React from 'react'
-import pic from "../assests/load.svg"
+import pic from "../assests/load2.svg"
+import india from "../assests/india.png"
 
 import { motion} from "framer-motion";
 
@@ -9,8 +10,11 @@ const Loading = () => {
     <motion.div
      exit={{scale:1.1, opacity:0}} transition={{duration:2,delay:2}}
      className='w-full h-[100vh] grid items-center justify-center'> 
-         <div>
-          <img src={pic} alt='pic' className='w-16 h-16' />
+         <div className='flex flex-col items-center relative'>
+            <div className=' absolute top-10'>
+                <img src={india} alt='india' className='w-20 pb-1 '/>
+             </div>
+            <img src={pic} alt='pic' className='w-32  ' />
          </div>
         
     </motion.div>

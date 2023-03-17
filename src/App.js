@@ -10,9 +10,10 @@ const App = ()=> {
    useEffect(()=>{
       setTimeout(()=>{
          setTrigger(false)
-      },4000)
-   })
+      },4500)
+   },[])
     return(
+      
        <Router>
         {
           trigger?(

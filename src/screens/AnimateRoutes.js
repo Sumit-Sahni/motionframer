@@ -11,8 +11,8 @@ function AnimatedRoutes() {
   return (
     <AnimatePresence  >
       <Routes key={location.pathname} location={location}>
+       <Route path="/Ui" element={<UIWorks/>}/> 
         <Route path="/" element={<HeroSection/>} />
-        <Route path="/Ui" element={<UIWorks/>}/> 
         <Route path="/cover" element={<Cover/>}/> 
         <Route path="/work" element={<Work/>}/> 
         <Route path="/*" element={<Navigate to="/"/>}/>
