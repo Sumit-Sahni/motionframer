@@ -57,7 +57,7 @@ const HeroScreen = () => {
        setTimeout(()=>{
         play1();
           setTrigger(true)
-       },1000) 
+       },4000) 
     },[])
    
 
