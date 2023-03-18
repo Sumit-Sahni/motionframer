@@ -55,7 +55,6 @@ const HeroScreen = () => {
 
     useEffect(()=>{
        setTimeout(()=>{
-        play1();
           setTrigger(true)
        },4000) 
     },[])
@@ -111,7 +110,7 @@ const HeroScreen = () => {
         </motion.div>
 
         <motion.div
-                 initial={{opacity:0}} whileInView={{y:0,opacity:1}} viewport={{once:'true'}} transition={{duration:1 ,delay:2}}
+                 initial={{opacity:0}} whileInView={{y:0,opacity:1}} viewport={{once:'true'}} transition={{duration:1 ,delay:1}}
                   whileHover={{shadow: "8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.25)"}}
                   className='relative w-[90%] mx-auto  sm:w-1/2 md:w-1/3 sm:mx-auto mt-10  text-center p-4  hover:border-double  delay-550 hover:bg-gray-500 hover:text-white transition duration-700 ease-in-out mb-16 '>
                     <TbHandClick size={20} className='absolute left-1 top-1 cursor-pointer ' />
