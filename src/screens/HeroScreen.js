@@ -185,7 +185,7 @@ const HeroScreen = () => {
                     <div className='text-xl md:text-3xl font-thin px-4 md:px-12 text-center '>
                        <p>
                        Thanks for checking out my work! 🙌🏻
-                       tap to know more about <u><Link to="/" className='text-red-600 font-semibold' >me</Link></u> or look at my <u><Link to="https://drive.google.com/file/d/1lxEePzFNT4mQQsCDWHg9bBLsgTXiXSjc/view?usp=share_link" className='text-red-600 font-semibold'>resume!</Link></u>
+                       tap to know more about <u><Link to="/" className='text-red-600 font-semibold' >me</Link></u> or look at my <u><Link to="https://drive.google.com/file/d/1kYNAYQRoLu5A6z9CQHiuLB-p6TVVL4L0/view?usp=share_link" className='text-red-600 font-semibold'>resume!</Link></u>
                        </p>
                     </div>
               </div>    
