@@ -72,8 +72,8 @@ const UIWorks = () => {
     <motion.div  transition={{duration:1.3}} exit={{y:-100, opacity:0.2}} className=' sm:w-full p-4 sm:h-auto flex flex-col lg:flex-row items-center justify-center sm:p-10 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 text-white'>
           <div className=' w-full h-72  lg:w-1/2 sm:h-auto lg:h-full flex flex-col justify-center items-center'>
             <motion.div 
-               className='bg-white w-32 sm:w-[10rem] sm:h-[25vh] md:w-[8rem] md:h-[33vh] lg:w-64  lg:h-[70vh] rounded-2xl ' style={{boxShadow:"rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset"}}>
-                <video src={Vid} width="full" height="full" controls autoPlay className='w-32 sm:w-60 lg:w-64 h-full overflow-hidden p-2 rounded-2xl'/>
+               className='w-32 bordre-2 bg-white sm:w-60 lg:w-64 rounded-2xl overflow-hidden ' style={{boxShadow:"rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset"}}>
+                <video src={Vid}  controls autoPlay className='w-[100%]  p-3 rounded-2xl'/>
             </motion.div>
           
           </div>
@@ -114,8 +114,8 @@ const UIWorks = () => {
                    src={slide[currentIndex].url}  className='w-32 sm:w-60 lg:w-64 overflow-hidden p-2 rounded-2xl'>
                 </motion.img>
               
-            </motion.div>
-            <div className='w-32 h-5 flex items-center justify-center mt-2 cursor-pointer'>
+             </motion.div>
+             <div className='w-32 h-5 flex items-center justify-center mt-2 cursor-pointer'>
                  {
                   slide.map((slide, index)=>{
                     return(
