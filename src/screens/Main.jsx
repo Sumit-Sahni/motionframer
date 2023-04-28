@@ -33,15 +33,15 @@ const Main = () => {
       <NavbarComp/>
      <section className='h-auto sm:h-[390vh] bg-[#0a192f] absolute '>
         {/* MY INTRO  */}
-         <div className='sm:h-[70vh] md:h-[100vh] w-full sm:w-2/3 mx-auto py-16 px-2 md:px-16 mt-24'>
+         <div className='sm:h-[70vh] md:h-[100vh] w-full sm:w-2/3 mx-auto py-16 px-2 md:px-16 md:mt-24'>
             <div>
                 <h1 className='px-1 py-4 text-[#64ffda] mx-2 sm:py-6 sm:px-2 font-semibold'>Hi, my name is</h1>
             </div>
             <div className='p-2 sm:px-3'>
-                  <h1 className='text-5xl sm:text-7xl font-extrabold text-gray-300 font-opensans'>Sumit Sahni.</h1>
+                  <h1 className='text-4xl sm:text-7xl font-extrabold text-gray-300 font-opensans'>Sumit Sahni.</h1>
             </div>
             <div className='p-2 sm:py-2 w-full'>
-               <h2 className='text-[32px] sm:text-6xl md:text-7xl font-opensans font-extrabold text-gray-600'>Build ideas into digital<br/><span className='sm:visible text-transparent bg-clip-text bg-gradient-to-r from-purple-700 font-bold to-pink-600 '>Realities.</span></h2>  
+               <h2 className='text-[28px] sm:text-6xl md:text-7xl font-opensans font-extrabold text-gray-600'>Build ideas into digital<br/><span className='sm:visible text-transparent bg-clip-text bg-gradient-to-r from-purple-700 font-bold to-pink-600 '>Realities.</span></h2>  
             </div>
             <div className='p-2 w-full sm:w-full md:w-3/5 sm:py-4 sm:px-3'>
                 <p className='text-gray-400 sm:text-xl'>I'm a software engineering student specializing in Web-dev and problem solving. Currently, I'm focused on learning other web based technologies</p>
@@ -55,9 +55,9 @@ const Main = () => {
          </div>
 
            {/* ABOUT ME  */}
-          <div className='sm:h-[100vh]  w-full sm:w-3/4 mx-auto py-16 px-2 sm:px-16'>
+          <div className='sm:h-[100vh]  w-full sm:w-3/4 mx-auto md:py-16 px-2 sm:px-16'>
 
-             <div className='px-4 sm:px-3 flex flex-row items-center gap-6 mb-5 sm:mb-10'>
+             <div className='px-4 sm:px-3 flex flex-row items-center gap-6 mb-5 lg:mb-10'>
                 <h1 className='md:text-4xl text-white font-semibold font-comfort'><span className='text-[#64ffda]'>0.1 </span>About Me</h1>
                 <div className='w-48 sm:w-96 border border-gray-600  sm:mt-1'></div>
              </div>
@@ -104,8 +104,8 @@ const Main = () => {
           
 
            {/* ACHIVEMENT & EXPERIENCE  */}
-           <div className='sm:h-[80vh] md:h-[70vh] w-full sm:w-3/4 mx-auto py-16 px-2 sm:px-24'> 
-              <div className='px-4 sm:px-3 flex flex-row items-center gap-6 mb-5 sm:mb-20'>
+           <div className='sm:h-[80vh] md:h-[60vh] w-full sm:w-3/4 mx-auto md:py-16 px-2 sm:px-24'> 
+              <div className='px-4 sm:px-3 flex flex-row items-center gap-6 mb-5 lg:mb-20'>
                  <h1 className='md:text-4xl text-white font-semibold font-comfort'><span className='text-[#64ffda]'>0.2 </span>Achivement & Experience</h1>
                  <div className='w-48 sm:w-96 border border-gray-600  sm:mt-1'></div>
               </div>
@@ -194,7 +194,7 @@ const Main = () => {
 
            {/* GET IN TOUCH  */}
 
-          <div className='h-[60vh] sm:h-[60vh] w-full sm:w-3/4 mx-auto sm:px-24 mt-10 md:mt-32 '> 
+          <div className='h-[60vh] sm:h-[60vh] w-full sm:w-3/4 mx-auto sm:px-24 md:mt-10 lg:mt-32 '> 
               <div className='w-full md:w-3/4 mx-auto flex flex-col items-center justify-center'>
                   <h1 className='px-1 py-4 text-[#64ffda] mx-2 sm:py-6 sm:px-2 font-semibold'><span>0.3 What's Next?</span></h1>
                   <div>
