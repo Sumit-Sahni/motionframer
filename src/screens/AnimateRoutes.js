@@ -5,6 +5,7 @@ import  HeroSection  from "./HeroScreen";
 import UIWorks from "./UIWorks";
 import Work from "./Work";
 import Cover  from "./Cover";
+import Main from "./Main";
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -12,7 +13,7 @@ function AnimatedRoutes() {
     <AnimatePresence  >
       <Routes key={location.pathname} location={location}>
        <Route path="/Ui" element={<UIWorks/>}/> 
-        <Route path="/" element={<HeroSection/>} />
+        <Route path="/" element={<Main/>} />
         <Route path="/cover" element={<Cover/>}/> 
         <Route path="/work" element={<Work/>}/> 
         <Route path="/*" element={<Navigate to="/"/>}/>

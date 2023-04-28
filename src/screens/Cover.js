@@ -1,4 +1,4 @@
-import Logo from "../assests/Logo.jpg"
+import Logo from "../assests/Logo2.jpg"
 import {motion } from "framer-motion"
 import React from 'react'
 import {Link } from 'react-router-dom'
@@ -11,9 +11,9 @@ import {Link } from 'react-router-dom'
     <>
 
        <div
-          className='w-full h-[80px] z-10  sticky '>
+          className='w-full h-[80px] z-10  sticky bg-[#0a192f]'>
           <div className='px-12 flex justify-between items-center w-full h-full'>
-             <motion.div initial={{x:-100}} animate={{x:0}} transition={{duration:1 ,delay:1}} className='flex items-center'>
+             <motion.div initial={{x:-100}} animate={{x:0}} transition={{duration:1}} className='flex items-center'>
                   <Link to="/"><img src={Logo} alt='logo' width={40}></img></Link>
              </motion.div>
           </div>
@@ -24,10 +24,10 @@ import {Link } from 'react-router-dom'
        <motion.div
          initial={{opacity: 0, scale:3}}
          animate={{opacity: 1, scale:1}}
-         transition={{ duration:2, delay:0.2}}
+         transition={{ duration:1}}
          exit={{y:-50, opacity:0.2}}
          
-         className='sm:w-full  p-4  flex flex-col lg:flex-row items-center justify-center sm:p-10 w-full sm:h-[100vh] font-medium'>
+         className='sm:w-full  p-4  flex flex-col lg:flex-row items-center justify-center sm:p-10 w-full sm:h-[100vh] font-medium bg-[#0a192f] text-gray-300'>
           <div className=' sm:w-[80%] mx-auto' >
             <div className='pb-5'>
               <p> <span className='text-sm sm:text-4xl'>D</span>ear Hiring Manager,</p>
