@@ -186,7 +186,7 @@ const Main = () => {
                                       initial={{y:-20,opacity:0}}
                                       animate={{y:0,opacity:1}}
                                       transition={{duration:0.6}}
-                                      className='text-gray-400'>Have been devloping & creating UI design sicne last 1 year</motion.p>
+                                      className='text-gray-400'>Have been devloping & creating UI design since last 1 year</motion.p>
                                     </div>
                                 </motion.div>
                                 :null)

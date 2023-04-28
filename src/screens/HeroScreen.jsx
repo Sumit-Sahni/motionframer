@@ -8,7 +8,6 @@ import NavbarComp from './NavbarComp';
 import room1 from "../assests/room1.jpg"
 import room2 from "../assests/room2.jpg"
 import room3 from "../assests/room3.jpg"
-import boy from "../assests/boy.jpg"
 import react from "../assests/react.png"
 import nextjs from "../assests/nextjs.png"
 import javascript from "../assests/javascript.png"
@@ -18,7 +17,6 @@ import html from "../assests/html.png"
 import css from "../assests/css.png"
 import styled from "../assests/styled-components.png"
 import tailwind from "../assests/Tailwind.png"
-import bk from "../assests/bk1.jpg"
 import popup from "../assests/popup.mp3"
 import { Link } from 'react-router-dom';
 
