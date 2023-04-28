@@ -9,7 +9,7 @@ const Loading = () => {
   return (
     <motion.div
      exit={{scale:1.1, opacity:0}} transition={{duration:2,delay:2}}
-     className='w-full h-[100vh] grid items-center justify-center'> 
+     className='w-full h-[100vh] grid items-center justify-center bg-[#0a192f]'> 
          <div className='flex flex-col items-center relative'>
             <div className=' absolute top-10'>
                 <img src={india} alt='india' className='w-20 pb-1 '/>
