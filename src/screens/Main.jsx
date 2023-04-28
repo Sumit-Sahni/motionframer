@@ -38,13 +38,25 @@ const Main = () => {
                 <h1 className='px-1 py-4 text-[#64ffda] mx-2 sm:py-6 sm:px-2 font-semibold'>Hi, my name is</h1>
             </div>
             <div className='p-2 sm:px-3'>
-                  <h1 className='text-4xl sm:text-7xl font-extrabold text-gray-300 font-opensans'>Sumit Sahni.</h1>
+                  <motion.h1
+                    initial={{y:20,opacity:0}}
+                    animate={{y:0,opacity:1}}
+                    transition={{duration:0.6}}
+                  className='text-4xl sm:text-7xl font-extrabold text-gray-300 font-opensans'>Sumit Sahni.</motion.h1>
             </div>
             <div className='p-2 sm:py-2 w-full'>
-               <h2 className='text-[28px] sm:text-6xl md:text-7xl font-opensans font-extrabold text-gray-600'>Build ideas into digital<br/><span className='sm:visible text-transparent bg-clip-text bg-gradient-to-r from-purple-700 font-bold to-pink-600 '>Realities.</span></h2>  
+               <motion.h2
+                initial={{y:20,opacity:0}}
+                animate={{y:0,opacity:1}}
+                transition={{duration:0.6, delay:0.2}}
+               className='text-[28px] sm:text-6xl md:text-7xl font-opensans font-extrabold text-gray-600'>Build ideas into digital<br/><span className='sm:visible text-transparent bg-clip-text bg-gradient-to-r from-purple-700 font-bold to-pink-600 '>Realities.</span></motion.h2>  
             </div>
             <div className='p-2 w-full sm:w-full md:w-3/5 sm:py-4 sm:px-3'>
-                <p className='text-gray-400 sm:text-xl'>I'm a software engineering student specializing in Web-dev and problem solving. Currently, I'm focused on learning other web based technologies</p>
+                <motion.p
+                 initial={{y:20,opacity:0}}
+                 animate={{y:0,opacity:1}}
+                 transition={{duration:0.6, delay:0.3}}
+                className='text-gray-400 sm:text-xl'>I'm a software engineering student specializing in Web-dev and problem solving. Currently, I'm focused on learning other web based technologies</motion.p>
             </div>
             <div className='px-2 sm:px-4 mt-4'>
                   {/* BUTTON GET IN TOUCH */}
@@ -62,41 +74,48 @@ const Main = () => {
              </div>
 
              <div className='w-full h-full flex flex-col md:flex-row'>
+                <motion.div
+                    initial={{x:-50,opacity:0}}
+                    animate={{}}
+                    whileInView={{x:0,opacity:1}}
+                    viewport={{once:'true'}}
+                    transition={{duration:0.6, delay:0.2}}
+                className='md:w-[50%]'>  
+                 <div className='p-4 text-gray-500 font-semibold '>
+                         <h1>
+                            <span className='w-96 '>
+                            <p>Currently at Pune Maharashtra studying Master's in Computer Application, set to post graduate in May 2023.</p></span>
+                         </h1>
+                              <div className='p-4'></div> 
+                          <h1>
+                            <span className='w-96 '>
+                            <p>I have made a life out of thinking (sometimes a bit too much) about how people come together and connect in the physical and digital worlds around them.</p>     
+                           </span>
+                          </h1>
+                            <div className='p-4'></div> 
+                          <h1>
+                            <span className='w-96 '>
+                               <p>I believe that the projects I have worked on have been the highlight of my design journey. I have been influenced to constantly look for problems and design solutions for them; for challenges like these are what drive me to work. And I love every moment of the process.</p>
+                           </span>
+                          </h1>
+                             <div className='p-4'></div>
+                         <h1>
+                            <span className='w-96 '>
+                               <p>I aim towards combining my learnings of UI design  to integrate diverse perspectives and a collaborative approach to the product innovation process.</p>
+                           </span>
+                         </h1>
+                      </div>
+               </motion.div>
 
-                <div className='md:w-[50%]'>  
-                 <div
-                   className='p-4 text-gray-500 font-semibold '>
-                   <h1>
-                    <span className='w-96 '>
-                    <p>Currently at Pune Maharashtra studying Master's in Computer Application, set to post graduate in May 2023.</p></span>
-                   </h1>
-                      <div className='p-4'></div> 
-                   <h1>
-                    <span className='w-96 '>
-                    <p>I have made a life out of thinking (sometimes a bit too much) about how people come together and connect in the physical and digital worlds around them.</p>     
-                   </span>
-                   </h1>
-                    <div className='p-4'></div> 
-                   <h1>
-                    <span className='w-96 '>
-                       <p>I believe that the projects I have worked on have been the highlight of my design journey. I have been influenced to constantly look for problems and design solutions for them; for challenges like these are what drive me to work. And I love every moment of the process.</p>
-                   </span>
-                   </h1>
-                     <div className='p-4'></div>
-                   <h1>
-                    <span className='w-96 '>
-                       <p>I aim towards combining my learnings of UI design  to integrate diverse perspectives and a collaborative approach to the product innovation process.</p>
-                   </span>
-                      </h1>
-                     </div>
-                    </div>
-                    <div>
-                  </div>
-
-                  <div className='w-full  md:w-[80%] mx-auto lg:w-[50%] flex flex-col items-center lg:items-end py-10 '>
-                     <div className="relative flex flex-row  justify-center items-center rounded-full  mt-4 p-2   border-2 border-[#64ffda]  shadow-lg hover:border-dotted  ">
+                <div className='w-full  md:w-[80%] mx-auto lg:w-[50%] flex flex-col items-center lg:items-end py-10 '>
+                     <motion.div
+                        initial={{x:50,opacity:0}}
+                        whileInView={{x:0,opacity:1}}
+                        viewport={{once:'true'}}
+                        transition={{duration:0.6, delay:0.2}}
+                        className="relative flex flex-row  justify-center items-center rounded-full  mt-4 p-2   border-2 border-[#64ffda]  shadow-lg hover:border-dotted  ">
                        <img src={me1} alt="me1" className=" w-52 sm:w-72  h-full rounded-full border hover:opacity-75  opacity-40 cursor-pointer"/>
-                     </div>                  
+                     </motion.div>                  
                    </div>
              </div>
             </div>
@@ -105,7 +124,12 @@ const Main = () => {
            {/* ACHIVEMENT & EXPERIENCE  */}
            <div className='h-auto md:h-[60vh] w-full md:w-3/4 mx-auto  px-2 sm:px-24 lg:mt-24 lg:py-24'> 
               <div className='px-4 sm:px-3 flex flex-row items-center gap-6 mb-5 lg:mb-20'>
-                 <h1 className='md:text-4xl text-white font-semibold font-comfort'><span className='text-[#64ffda]'>0.2 </span>Achivement & Experience</h1>
+                 <motion.h1
+                   initial={{y:30,opacity:0}}
+                   viewport={{once:'true'}}
+                   whileInView={{y:0,opacity:1}}
+                   transition={{duration:0.6, delay:0.3}}
+                 className='md:text-4xl text-white font-semibold font-comfort'><span className='text-[#64ffda]'>0.2 </span>Achivement & Experience</motion.h1>
                  <div className='w-48 sm:w-96 border border-gray-600  sm:mt-1'></div>
               </div>
 
