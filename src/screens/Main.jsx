@@ -31,9 +31,9 @@ const Main = () => {
   return (
    <>
       <NavbarComp/>
-     <section className='h-auto md:h-[385vh] bg-[#0a192f] absolute '>
+     <section className='h-auto md:h-[385vh] lg:h-[350vh] bg-[#0a192f] absolute '>
         {/* MY INTRO  */}
-         <div className='h-[80vh] sm:h-[60vh] w-full sm:w-2/3 mx-auto py-16 px-2 md:px-16 mt-24'>
+         <div className='h-[80vh] sm:h-[60vh] lg:h-[90vh] w-full sm:w-2/3 mx-auto py-16 px-2 md:px-16 mt-24'>
             <div>
                 <h1 className='px-1 py-4 text-[#64ffda] mx-2 sm:py-6 sm:px-2 font-semibold'>Hi, my name is</h1>
             </div>
@@ -103,7 +103,7 @@ const Main = () => {
           
 
            {/* ACHIVEMENT & EXPERIENCE  */}
-           <div className='h-auto md:h-[60vh] w-full md:w-3/4 mx-auto  px-2 sm:px-24'> 
+           <div className='h-auto md:h-[60vh] w-full md:w-3/4 mx-auto  px-2 sm:px-24 lg:mt-24 lg:py-24'> 
               <div className='px-4 sm:px-3 flex flex-row items-center gap-6 mb-5 lg:mb-20'>
                  <h1 className='md:text-4xl text-white font-semibold font-comfort'><span className='text-[#64ffda]'>0.2 </span>Achivement & Experience</h1>
                  <div className='w-48 sm:w-96 border border-gray-600  sm:mt-1'></div>
@@ -193,7 +193,7 @@ const Main = () => {
 
            {/* GET IN TOUCH  */}
 
-          <div className='h-[60vh] sm:h-[40vh] w-full sm:w-full md:w-3/4 mx-auto sm:px-24 sm:mt-32 lg:mt-32'> 
+          <div className='h-[60vh] sm:h-[40vh] lg:h-[60vh] w-full sm:w-full md:w-3/4 mx-auto sm:px-24 sm:mt-32 lg:mt-32'> 
               <div className='w-full md:w-3/4 mx-auto flex flex-col items-center justify-center'>
                   <h1 className='px-1 py-4 text-[#64ffda] mx-2 sm:py-6 sm:px-2 font-semibold'><span>0.3 What's Next?</span></h1>
                   <div>
