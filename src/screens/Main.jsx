@@ -31,9 +31,9 @@ const Main = () => {
   return (
    <>
       <NavbarComp/>
-     <section className='h-[390vh] bg-[#0a192f] absolute '>
+     <section className='h-auto sm:h-[390vh] bg-[#0a192f] absolute '>
         {/* MY INTRO  */}
-         <div className='h-[100vh] w-full sm:w-2/3 mx-auto py-16 px-2 md:px-16 mt-24'>
+         <div className='sm:h-[70vh] md:h-[100vh] w-full sm:w-2/3 mx-auto py-16 px-2 md:px-16 mt-24'>
             <div>
                 <h1 className='px-1 py-4 text-[#64ffda] mx-2 sm:py-6 sm:px-2 font-semibold'>Hi, my name is</h1>
             </div>
@@ -55,7 +55,7 @@ const Main = () => {
          </div>
 
            {/* ABOUT ME  */}
-          <div className='sm:h-[100vh] w-full sm:w-3/4 mx-auto py-16 px-2 sm:px-16'>
+          <div className='sm:h-[100vh]  w-full sm:w-3/4 mx-auto py-16 px-2 sm:px-16'>
 
              <div className='px-4 sm:px-3 flex flex-row items-center gap-6 mb-5 sm:mb-10'>
                 <h1 className='md:text-4xl text-white font-semibold font-comfort'><span className='text-[#64ffda]'>0.1 </span>About Me</h1>
@@ -104,7 +104,7 @@ const Main = () => {
           
 
            {/* ACHIVEMENT & EXPERIENCE  */}
-           <div className='sm:h-auto w-full sm:w-3/4 mx-auto py-16 px-2 sm:px-24'> 
+           <div className='sm:h-[80vh] md:h-[70vh] w-full sm:w-3/4 mx-auto py-16 px-2 sm:px-24'> 
               <div className='px-4 sm:px-3 flex flex-row items-center gap-6 mb-5 sm:mb-20'>
                  <h1 className='md:text-4xl text-white font-semibold font-comfort'><span className='text-[#64ffda]'>0.2 </span>Achivement & Experience</h1>
                  <div className='w-48 sm:w-96 border border-gray-600  sm:mt-1'></div>
