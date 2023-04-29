@@ -167,7 +167,7 @@ const UIWorks = () => {
 
        {/* Other UI Clones */}
         <section className='relative w-full  sm:w-full sm:h-auto '>
-            <div className='absolute h[60%] w-full h-full  bg-gray-200' style={{clipPath: "polygon(0 0, 0% 100%, 82% 100%)", background:"linear-gradient ( #0a190f, #0a193f)"}}>
+            <div className='absolute h[60%] w-full h-full  bg-gray-200' style={{clipPath: "polygon(0 0, 0% 100%, 82% 100%)", background:"linear-gradient(to bottom, #0a190f, #0a193f)"}}>
             
             </div>
             <motion.div  transition={{duration:1.3}} exit={{backgroundColor: "#666666", y:-100, opacity:0.2}} className=' sm:w-full p-4 sm:py-32 sm:h-auto flex flex-col lg:flex-row items-center justify-center sm:p-10'  >
