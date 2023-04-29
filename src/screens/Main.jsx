@@ -74,7 +74,7 @@ const Main = () => {
   return (
    <>
       <NavbarComp/>
-     <motion.section transition={{duration:0.6}} exit={{y:-100, opacity:0}} className='h-auto md:h-[450vh] lg:h-[550vh] bg-[#0a192f] absolute '>
+     <motion.section transition={{duration:0.6}} exit={{y:-100, opacity:0}} className='h-auto md:h-[450vh] lg:h-[540vh] bg-[#0a192f] absolute '>
         {/* MY INTRO  */}
          <div className='h-[80vh] sm:h-auto lg:h-[90vh] w-full sm:w-2/3 mx-auto py-16 px-2 md:px-16 mt-24 '>
             <div>

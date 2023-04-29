@@ -9,7 +9,7 @@ import Vid  from "../assests/vid.mp4"
 import Vid1 from "../assests/Ui.mp4"
 import {AiOutlineClose,AiOutlineMenu } from 'react-icons/ai'
 import {Link} from 'react-router-dom'
-import Logo from  "../assests/Logo.jpg"
+import Logo from  "../assests/Logo2.jpg"
 
 
 const UIWorks = () => {
@@ -48,7 +48,7 @@ const UIWorks = () => {
 
 
   return (
-    <>
+    <div className='bg-[#0a192f] text-white' >
      <div
           className='w-full h-[80px] z-10  sticky '>
           <div className='px-12 flex justify-between items-center w-full h-full'>
@@ -80,7 +80,7 @@ const UIWorks = () => {
         
         </div>
      <motion.div  transition={{duration:1.3}} exit={{y:-100, opacity:0.2}} className='relative sm:w-full p-4 sm:h-auto flex flex-col lg:flex-row items-center justify-center sm:p-10 ' >
-     <div className='absolute h[60%] w-full sm:h-full' style={{clipPath: "polygon(26% 59%, 71% 80%, 100% 48%, 100% 100%, 0 100%, 0 13%)", background:"linear-gradient(to bottom, #0b151b,#ffffff)"}}>
+     <div className='absolute h[60%] w-full sm:h-full' style={{clipPath: "polygon(26% 59%, 71% 80%, 100% 48%, 100% 100%, 0 100%, 0 13%)", background:"linear-gradient(to bottom, #0a190f, #0a193f)"}}>
             
             </div>
           <div className='relative w-full h-72  lg:w-1/2 sm:h-auto lg:h-full flex flex-col justify-center items-center'>
@@ -167,7 +167,7 @@ const UIWorks = () => {
 
        {/* Other UI Clones */}
         <section className='relative w-full  sm:w-full sm:h-auto '>
-            <div className='absolute h[60%] w-full h-full  bg-gray-200' style={{clipPath: "polygon(0 0, 0% 100%, 82% 100%)", background:"linear-gradient(to bottom, #bdc3c7, #2c3e50)"}}>
+            <div className='absolute h[60%] w-full h-full  bg-gray-200' style={{clipPath: "polygon(0 0, 0% 100%, 82% 100%)", background:"linear-gradient ( #0a190f, #0a193f)"}}>
             
             </div>
             <motion.div  transition={{duration:1.3}} exit={{backgroundColor: "#666666", y:-100, opacity:0.2}} className=' sm:w-full p-4 sm:py-32 sm:h-auto flex flex-col lg:flex-row items-center justify-center sm:p-10'  >
@@ -203,7 +203,7 @@ const UIWorks = () => {
       </motion.div>
 
         </section>
-      </>
+      </div>
   )
 }
 export default UIWorks
