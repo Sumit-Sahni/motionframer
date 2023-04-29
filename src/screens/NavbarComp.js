@@ -33,14 +33,18 @@ const NavbarComp = () => {
           </div>
          
           <ul  className={nav ? "hidden" :  ` absolute bg-[#0a192f] text-white w-full h-[800vh]  px-8 md:hidden text-3xl`}>
-          <li className='p-4 w-full text-2xl font-cba my-5 text-left'>
-                   <Link to="/Ui" className=' cursor-pointer'>UI</Link>
-            </li>
-                 
                  <li className='p-4 w-full text-2xl font-cba my-5 text-left'>
-                 <Link to="/work" className=' cursor-pointer'>Work</Link>                 
+                     <Link to="/Ui" className=' cursor-pointer'>UI</Link>
+                  </li>
+                 <li className='p-4 w-full text-2xl font-cba my-5 text-left'>
+                     <Link to="/work" className=' cursor-pointer'>Work</Link>                 
                  </li>
-              </ul>
+                 <li className='p-4 w-full text-2xl font-cba my-5 text-left'>
+                 <button class=" hover:bg-gray-900 hover:border-dotted  border-spacing-1 font-semibold text-[#ffffff] rounded">
+                   <Link to="https://drive.google.com/file/d/1Tf2dvDszyQLZPsLPQqVB8gKuE04JlIoR/view?usp=share_link" className='text-red-600 font-semibold'>resume</Link>
+                  </button>      
+                 </li>
+         </ul>
         
         </div>
   )

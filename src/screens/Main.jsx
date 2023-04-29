@@ -3,6 +3,19 @@ import { motion} from "framer-motion"
 import NavbarComp from './NavbarComp'
 import Footer from './FooterScreen'
 import me1 from "../assests/me1.png"
+import react from "../assests/react.png"
+import nextjs from "../assests/nextjs.png"
+import javascript from "../assests/javascript.png"
+import typescript from "../assests/typescript.png"
+import redux from "../assests/redux.png"
+import html from "../assests/html.png"
+import css from "../assests/css.png"
+import styled from "../assests/styled-components.png"
+import tailwind from "../assests/Tailwind.png"
+import node from "../assests/node.png"
+import mongo from "../assests/mongo.png"
+import git from "../assests/github.png"
+import express from "../assests/express.png"
 import { Link } from 'react-router-dom'
 
 
@@ -31,9 +44,9 @@ const Main = () => {
   return (
    <>
       <NavbarComp/>
-     <section className='h-auto md:h-[385vh] lg:h-[350vh] bg-[#0a192f] absolute '>
+     <section className='h-auto md:h-[385vh] lg:h-[450vh] bg-[#0a192f] absolute '>
         {/* MY INTRO  */}
-         <div className='h-[80vh] sm:h-[60vh] lg:h-[90vh] w-full sm:w-2/3 mx-auto py-16 px-2 md:px-16 mt-24'>
+         <div className='h-[80vh] sm:h-auto lg:h-[90vh] w-full sm:w-2/3 mx-auto py-16 px-2 md:px-16 mt-24 '>
             <div>
                 <h1 className='px-1 py-4 text-[#64ffda] mx-2 sm:py-6 sm:px-2 font-semibold'>Hi, my name is</h1>
             </div>
@@ -120,7 +133,37 @@ const Main = () => {
              </div>
             </div>
           
-
+           {/* SKILLS */}
+           <motion.div  exit={{scale:1.1, opacity:0}} transition={{duration:0.5,delay:0.5}} className=' w-full h-auto flex flex-col items-center justify-center '>
+           <section className='w-full h-auto py-24'>
+            <div className='w-[100%] lg:w-[70%] mx-auto px-2 sm:px-10 '>
+                <div>
+                   <h1 className='sm:text-5xl font-semibold font-opensans text-white'><span className='text-[#64ffda]'>0.2 </span> Skills</h1>
+                   <p className='text-xl py-2 text-gray-400'>My Area of Expertiese</p>
+                </div>
+                <h1 className='text-[#64ffda] mt-2' >frontend development</h1>
+                <div className='mt-8 w-[100%]  md:w-[70%] h-[10vh] sm:h-[15vh]  md:h-[20vh] flex flex-row  justify-evenly flex-wrap '>
+                      <div className='w-8 h-2 sm:w-14 sm:h-6'> <img src={react} alt="react" /></div>
+                      <div className='w-9 h-2 sm:w-16 sm:h-6'> <img src={nextjs} alt="react" /></div>
+                      <div className='w-8 h-2 sm:w-14 sm:h-6'> <img src={javascript} alt="react" /></div>
+                      <div className='w-8 h-2 sm:w-14 sm:h-6'> <img src={typescript} alt="react" /></div>
+                      <div className='w-8 h-2 sm:w-14 sm:h-6'> <img src={redux} alt="react" /></div>
+                      <div className='w-8 h-2 sm:w-14 sm:h-6'> <img src={html} alt="react" /></div>
+                      <div className='w-8 h-2 sm:w-14 sm:h-6'> <img src={css} alt="react" /></div>
+                      <div className='w-8 h-2 sm:w-14 sm:h-6'> <img src={styled} alt="react" /></div>
+                      <div className='w-8 h-2 sm:w-14 sm:h-6'> <img src={tailwind} alt="react" /></div>   
+                </div>
+                <h1 className='text-[#64ffda] mt-2' >frontend development</h1>
+                <div className='mt-8 w-[50%]  md:w-[40vh] h-[10vh] sm:h-[15vh] md:h-[20vh]  flex flex-row  justify-evenly flex-wrap '>
+                      <div className='w-8 h-2 sm:w-20 sm:h-6'> <img src={node} alt="react" /></div>
+                      <div className='w-9 h-2 sm:w-20 sm:h-6'> <img src={ mongo} alt="react" /></div>
+                      <div className='w-8 h-2 sm:w-12 sm:h-5'> <img src={git} alt="react" /></div>
+                      <div className='w-8 h-2 sm:w-12 sm:h-5'> <img src={express} alt="react" /></div>
+                    
+                </div>
+            </div>
+           </section>
+    </motion.div>
            {/* ACHIVEMENT & EXPERIENCE  */}
            <div className='h-auto md:h-[60vh] w-full md:w-3/4 mx-auto  px-2 sm:px-24 lg:mt-24 lg:py-24'> 
               <div className='px-4 sm:px-3 flex flex-row items-center gap-6 mb-5 lg:mb-20'>
@@ -129,7 +172,7 @@ const Main = () => {
                    viewport={{once:'true'}}
                    whileInView={{y:0,opacity:1}}
                    transition={{duration:0.6, delay:0.3}}
-                 className='md:text-4xl text-white font-semibold font-comfort'><span className='text-[#64ffda]'>0.2 </span>Achivement & Experience</motion.h1>
+                 className='md:text-4xl text-white font-semibold font-comfort'><span className='text-[#64ffda]'>0.3 </span>Achivement & Experience</motion.h1>
                  <div className='w-48 sm:w-96 border border-gray-600  sm:mt-1'></div>
               </div>
 
@@ -217,9 +260,9 @@ const Main = () => {
 
            {/* GET IN TOUCH  */}
 
-          <div className='h-[60vh] sm:h-[40vh] lg:h-[60vh] w-full sm:w-full md:w-3/4 mx-auto sm:px-24 sm:mt-32 lg:mt-32'> 
+          <div className='h-[60vh] sm:h-auto lg:h-[60vh] w-full sm:w-full md:w-3/4 mx-auto sm:px-24 sm:mt-32 lg:mt-32'> 
               <div className='w-full md:w-3/4 mx-auto flex flex-col items-center justify-center'>
-                  <h1 className='px-1 py-4 text-[#64ffda] mx-2 sm:py-6 sm:px-2 font-semibold'><span>0.3 What's Next?</span></h1>
+                  <h1 className='px-1 py-4 text-[#64ffda] mx-2 sm:py-6 sm:px-2 font-semibold'><span>0.4 What's Next?</span></h1>
                   <div>
                       <h1 className='text-3xl sm:text-6xl font-semibold text-white'>Get In Touch</h1>
                   </div>
