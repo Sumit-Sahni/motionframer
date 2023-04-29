@@ -17,8 +17,38 @@ import mongo from "../assests/mongo.png"
 import git from "../assests/github.png"
 import express from "../assests/express.png"
 import { Link } from 'react-router-dom'
+import room1 from "../assests/room1.jpg"
+import room2 from "../assests/room2.jpg"
+import room3 from "../assests/room3.jpg"
+import {CgIfDesign} from "react-icons/cg"
 
 
+const slide = [
+  {
+   url :room1,
+   img: "https://unsplash.com/photos/pqzRfBhd9r0/download?force=true&w=640",
+   title:"UX Research",
+   about:"Offer to design interfaces that provide a seamless user experience for visitors to the website, which can increase engagement and conversions."
+  },
+  {
+   url :room2,
+   img: "https://unsplash.com/photos/i1VQZsU86ok/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjc4NTQ4ODY1&force=true&w=640",
+   title:"Web Dev",
+   about:"Offer to design and develop visually appealing and user-friendly websites that are optimized for various devices."
+  },
+  {
+   url :room3,
+     img: "https://unsplash.com/photos/x9WGMWwp1NM/download?force=true&w=640",
+     title:"App Design",
+     about:"Offer to test websites or applications across multiple browsers and platforms to ensure that they work correctly and look consistent."
+  },
+  {
+    url :room1,
+     img: "https://unsplash.com/photos/m_HRfLhgABo/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjc4NTQ4NjI5&force=true&w=640",
+     title:"Web Design",
+     about:"Offer ongoing maintenance and support services to ensure that websites or applications are up-to-date and running smoothly."
+  }
+]
 const Main = () => {
   const [toggle, setToggle] =useState(true)
   const [toggle1, setToggle1] =useState(false)
@@ -44,7 +74,7 @@ const Main = () => {
   return (
    <>
       <NavbarComp/>
-     <section className='h-auto md:h-[385vh] lg:h-[450vh] bg-[#0a192f] absolute '>
+     <motion.section transition={{duration:0.6}} exit={{y:-100, opacity:0}} className='h-auto md:h-[450vh] lg:h-[550vh] bg-[#0a192f] absolute '>
         {/* MY INTRO  */}
          <div className='h-[80vh] sm:h-auto lg:h-[90vh] w-full sm:w-2/3 mx-auto py-16 px-2 md:px-16 mt-24 '>
             <div>
@@ -66,7 +96,7 @@ const Main = () => {
             </div>
             <div className='p-2 w-full sm:w-full md:w-3/5 sm:py-4 sm:px-3'>
                 <motion.p
-                 initial={{y:20,opacity:0}}
+                 initial={{y:-20, opacity:0}}
                  animate={{y:0,opacity:1}}
                  transition={{duration:0.6, delay:0.3}}
                 className='text-gray-400 sm:text-xl'>I'm a software engineering student specializing in Web-dev and problem solving. Currently, I'm focused on learning other web based technologies</motion.p>
@@ -93,8 +123,9 @@ const Main = () => {
                     whileInView={{x:0,opacity:1}}
                     viewport={{once:'true'}}
                     transition={{duration:0.6, delay:0.2}}
-                className='md:w-[50%]'>  
-                 <div className='p-4 text-gray-500 font-semibold '>
+                className='md:w-[50%] relative'> 
+                    <div className='md:w-[30%] border-l-2 h-[65vh] sm:h-96 sm:mt-5 border-gray-600 absolute'></div> 
+                 <div className='p-4 text-gray-400  '>
                          <h1>
                             <span className='w-96 '>
                             <p>Currently at Pune Maharashtra studying Master's in Computer Application, set to post graduate in May 2023.</p></span>
@@ -138,10 +169,10 @@ const Main = () => {
            <section className='w-full h-auto py-24'>
             <div className='w-[100%] lg:w-[70%] mx-auto px-2 sm:px-10 '>
                 <div>
-                   <h1 className='sm:text-5xl font-semibold font-opensans text-white'><span className='text-[#64ffda]'>0.2 </span> Skills</h1>
+                   <h1 className='text-2xl sm:text-5xl font-semibold font-opensans text-white'><span className='text-[#64ffda]'>0.2 </span> Skills</h1>
                    <p className='text-xl py-2 text-gray-400'>My Area of Expertiese</p>
                 </div>
-                <h1 className='text-[#64ffda] mt-2' >frontend development</h1>
+                <h1 className='text-[#64ffda] mt-2' >frontend dev</h1>
                 <div className='mt-8 w-[100%]  md:w-[70%] h-[10vh] sm:h-[15vh]  md:h-[20vh] flex flex-row  justify-evenly flex-wrap '>
                       <div className='w-8 h-2 sm:w-14 sm:h-6'> <img src={react} alt="react" /></div>
                       <div className='w-9 h-2 sm:w-16 sm:h-6'> <img src={nextjs} alt="react" /></div>
@@ -153,7 +184,7 @@ const Main = () => {
                       <div className='w-8 h-2 sm:w-14 sm:h-6'> <img src={styled} alt="react" /></div>
                       <div className='w-8 h-2 sm:w-14 sm:h-6'> <img src={tailwind} alt="react" /></div>   
                 </div>
-                <h1 className='text-[#64ffda] mt-2' >frontend development</h1>
+                <h1 className='text-[#64ffda] mt-2' >backend dev</h1>
                 <div className='mt-8 w-[50%]  md:w-[40vh] h-[10vh] sm:h-[15vh] md:h-[20vh]  flex flex-row  justify-evenly flex-wrap '>
                       <div className='w-8 h-2 sm:w-20 sm:h-6'> <img src={node} alt="react" /></div>
                       <div className='w-9 h-2 sm:w-20 sm:h-6'> <img src={ mongo} alt="react" /></div>
@@ -256,11 +287,45 @@ const Main = () => {
                   </div>
             </div>
            </div>
-          
-
+           {/* SERVICES  */}
+           <section className='hidden  w-full  lg:flex flex-col items-center sm:p-12 text-white'>
+          <div className='w-[90%] px-9  sm:w-full  md:w-[53rem] md:h-auto  sm:py-8 sm:px-4  cursor-pointer'>
+            <h1><span className="text-2xl text-[#64ffda]"> S</span> ervices</h1>
+            <hr
+            className='w-24  mx-a cursor-pointer'></hr>
+            <p className=' font-opensans text-sm py-2'>Create visually stunning, user-friendly websites with our expert frontend development services, including custom UX design, pixel-perfect coding, responsive design, cross-browser testing, optimization, accessibility testing, and ongoing maintenance and support.</p>
+          </div>                 
+                <div className='w-full  p-1  md:w-[80%] mx-auto flex flex-row flex-wrap items-center justify-center  gap-4 '>
+         
+                      {
+                        slide.map(( item, i)=>{
+                          return(
+                             <motion.div
+                              initial={{opacity:0, x:i%2 ===0?-50:100,y:50}}
+                              whileInView={{opacity:1, x:0, y:0}}
+                              viewport={{once:'true'}}
+                              transition={{duration:0.5, delay:i*0.2}}
+                              key={i}
+                              className='w-24 sm:w-52 sm:h-52 md:w-[25rem] md:h-60  flex items-center justify-cente py-8'>
+                               <div style={{backgroundImage:`url(${item.img})`}} className='relative w-full h-full bg-no-repeat bg-cover z-0 '>
+                                <div className=' items-start absolute w-32 h-28 sm:w-52 sm:h-[18rem] md:w-[25rem] md:h-60  hover:scale-125 hover: bg-[#3e4d49] opacity-55  hover:border-solid hover:border-2  border-[#64ffda] hover:opacity-80 cursor-pointer  duration-200 z-50'>
+                                    <div className='h-10 sm:w-full p-4 '>
+                                           <CgIfDesign size={60} color='white'/>
+                                           <h1 className='text-white sm:text-2xl font-playfair font-bold'>{item.title}</h1>
+                                           <p className='text-white text-sm hidden sm:block font-comfort py-2'>{item.about}</p>
+                                    </div>
+                                 </div>
+                                 
+                               </div>
+                             </motion.div>
+                          )
+                        })
+                      }
+                </div>
+          </section>                  
            {/* GET IN TOUCH  */}
 
-          <div className='h-[60vh] sm:h-auto lg:h-[60vh] w-full sm:w-full md:w-3/4 mx-auto sm:px-24 sm:mt-32 lg:mt-32'> 
+          <div className='h-[60vh] sm:h-auto lg:h-[60vh] w-full sm:w-full md:w-3/4 mx-auto sm:px-24 mt-10 sm:mt-32 lg:mt-32'> 
               <div className='w-full md:w-3/4 mx-auto flex flex-col items-center justify-center'>
                   <h1 className='px-1 py-4 text-[#64ffda] mx-2 sm:py-6 sm:px-2 font-semibold'><span>0.4 What's Next?</span></h1>
                   <div>
@@ -281,7 +346,7 @@ const Main = () => {
               </div>  
            </div>
           <Footer/> 
-     </section>
+     </motion.section>
    </>
   )
 }
