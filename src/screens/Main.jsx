@@ -96,10 +96,10 @@ const Main = () => {
             </div>
             <div className='p-2 w-full sm:w-full md:w-3/5 sm:py-4 sm:px-3'>
                 <motion.p
-                 initial={{y:-20, opacity:0}}
+                 initial={{y:20, opacity:0}}
                  animate={{y:0,opacity:1}}
                  transition={{duration:0.6, delay:0.3}}
-                className='text-gray-400 sm:text-xl'>I'm a software engineering student specializing in Web-dev and problem solving. Currently, I'm focused on learning other web based technologies</motion.p>
+                className='text-gray-400 sm:text-xl'>I'm a software developer student specializing in Web-dev and problem solving. Currently, I'm focused on learning other web based technologies</motion.p>
             </div>
             <div className='px-2 sm:px-4 mt-4'>
                   {/* BUTTON GET IN TOUCH */}
