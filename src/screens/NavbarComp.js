@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState , useEffect} from 'react'
 import {AiOutlineClose,AiOutlineMenu } from 'react-icons/ai'
 import { Link } from 'react-router-dom'
 import Logo from  "../assests/Logo2.jpg"
@@ -11,10 +11,27 @@ const NavbarComp = () => {
      const handleNavbar = () =>{
         setNav(!nav)
      }
+     
+     const [isTopOfPage, setIsTopOfPage] = useState(true)
+
+     useEffect(()=>{
+         const handleScroll = () =>{
+            if(window.scrollY === 0){
+               setIsTopOfPage(true);
+            }
+            if(window.scrollY !==0){
+               setIsTopOfPage(false);
+            }
+         }
+         window.addEventListener('scroll', handleScroll);
+         return ()=>window.addEventListener('scroll', handleScroll);
+     },[])
+    
+    const navbarbackground = isTopOfPage ? "" : " bg-[#0e1423] grop-shadow-xl transition durations-500 delay-200"
 
   return (
         <div
-          className='w-full h-[80px] z-10  fixed  bg-[#0a192f] text-white'>
+          className={`${navbarbackground} w-full h-[80px] z-10  fixed  bg-[#0a192f] text-white`}>
           <div className='px-12 flex justify-between items-center w-full h-full'>
              <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{duration:1 ,delay:1}} className='flex items-center'>
                   <Link to="/"><img  src={Logo} alt='logo' width={40}></img></Link>

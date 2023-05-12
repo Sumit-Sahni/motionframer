@@ -12,7 +12,7 @@ import {Link} from 'react-router-dom'
 import Logo from  "../assests/Logo2.jpg"
 
 
-const UIWorks = () => {
+const UIWorks = ({isTopOfPage}) => {
 
   const [nav, setNav] = useState(true)
   const [volume] = useState(0.2)
@@ -46,11 +46,11 @@ const UIWorks = () => {
      setCurrentIndex(slideIndex)
   }
 
-
+  const navbarbackground = isTopOfPage ? "" : " bg-[#0e1423] grop-shadow-xl border-right"
   return (
     <div className='bg-[#0a192f] text-white' >
      <div
-          className='w-full h-[80px] z-10  sticky '>
+          className= {`${navbarbackground} w-full h-[80px] z-10 fixed`}>
           <div className='px-12 flex justify-between items-center w-full h-full'>
              <motion.div initial={{x:-100}} animate={{x:0}} transition={{duration:1 ,delay:2}} className='flex items-center'>
                   <Link to="/"><img src={Logo} alt='logo' width={40}></img></Link>
@@ -79,7 +79,7 @@ const UIWorks = () => {
               </ul>
         
         </div>
-     <motion.div  transition={{duration:1.3}} exit={{y:-100, opacity:0.2}} className='relative sm:w-full p-4 sm:h-auto flex flex-col lg:flex-row items-center justify-center sm:p-10 ' >
+     <motion.div  transition={{duration:1.3}} exit={{y:-100, opacity:0.2}} className='py-40 sm:w-full p-4 sm:h-auto flex flex-col lg:flex-row items-center justify-center sm:p-10 ' >
      <div className='absolute h[60%] w-full sm:h-full' style={{clipPath: "polygon(26% 59%, 71% 80%, 100% 48%, 100% 100%, 0 100%, 0 13%)", background:"linear-gradient(to bottom, #0a190f, #0a193f)"}}>
             
             </div>

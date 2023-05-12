@@ -128,7 +128,7 @@ const Main = () => {
                  <div className='p-4 text-gray-400  '>
                          <h1>
                             <span className='w-96 '>
-                            <p>Currently at Pune Maharashtra studying Master's in Computer Application, set to post graduate in May 2023.</p></span>
+                            <p>Currently at Pune Maharashtra studying Master's in Computer Application, set to post graduate in Jul 2023.</p></span>
                          </h1>
                               <div className='p-4'></div> 
                           <h1>
