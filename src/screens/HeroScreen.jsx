@@ -121,8 +121,8 @@ const HeroScreen = () => {
         </motion.div>
     </section>
 
-    <motion.div  exit={{scale:1.1, opacity:0}} transition={{duration:0.5,delay:0.5}} className=' bg- w-full h-auto flex flex-col items-center justify-center '>
-           <section className='w-full h-auto py-24'>
+    <motion.div  exit={{scale:1.1, opacity:0}} transition={{duration:0.5,delay:0.5}} className=' w-full h-auto flex flex-col items-center justify-center '>
+           <section className='w-full py-24'>
             <div className='w-full sm:w-[70%] mx-auto px-5 sm:px-10'>
                 <div>
                    <h1 className='sm:text-6xl font-semibold font-playfair'>Skills</h1>
@@ -170,7 +170,6 @@ const HeroScreen = () => {
             <p className=' font-opensans text-sm py-2'>Create visually stunning, user-friendly websites with our expert frontend development services, including custom UX design, pixel-perfect coding, responsive design, cross-browser testing, optimization, accessibility testing, and ongoing maintenance and support.</p>
           </div>                 
                 <div className='w-full  p-1  md:w-[80%] mx-auto flex flex-row flex-wrap items-center justify-center  gap-4 '>
-         
                       {
                         slide.map(( item, i)=>{
                           return(

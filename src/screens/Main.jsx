@@ -3,25 +3,72 @@ import { motion} from "framer-motion"
 import NavbarComp from './NavbarComp'
 import Footer from './FooterScreen'
 import me1 from "../assests/me1.png"
-import react from "../assests/react.png"
-import nextjs from "../assests/nextjs.png"
-import javascript from "../assests/javascript.png"
-import typescript from "../assests/typescript.png"
-import redux from "../assests/redux.png"
-import html from "../assests/html.png"
-import css from "../assests/css.png"
-import styled from "../assests/styled-components.png"
-import tailwind from "../assests/Tailwind.png"
-import node from "../assests/node.png"
-import mongo from "../assests/mongo.png"
-import git from "../assests/github.png"
-import express from "../assests/express.png"
 import { Link } from 'react-router-dom'
 import room1 from "../assests/room1.jpg"
 import room2 from "../assests/room2.jpg"
 import room3 from "../assests/room3.jpg"
 import {CgIfDesign} from "react-icons/cg"
+import styled, {keyframes, css} from 'styled-components';
 
+
+const scrollX = keyframes`
+   from{ 
+    left:translateX(0);
+  }
+  to{
+    transform:translateX(-100%)
+   }
+` 
+
+const common = css`
+flex-shrink: 0;
+display: flex;
+align-items: center;
+justify-content: space-between;
+white-space: nowrap;
+width: 100%;
+
+animation:${scrollX} 12s linear infinite;
+`
+const MarqueeGroup = styled.div`
+    ${common}
+`
+const MarqueeGroup2 = styled.div`
+    ${common}
+    animation-direction:reverse;
+    animation-delay:-3s; 
+`
+const ImageGroup = styled.div`
+    display: grid;
+    place-items: center;
+    width:clamp(10rem, 1rem + 40vmin, 30rem);
+    padding: clac(clamp(10rem, 1rem +30vmin, 30rem)/10);
+    
+
+`
+const Image = styled.div`
+   @media (max-width: 780px) {
+    padding: 0px 0px 0px 0px;
+  }
+`
+
+const row1 = [
+  "React Js",
+  "Next JS",
+  "Javascript",
+  "Tailwind css",
+  "MERN",
+  "React Native",
+];
+
+const row2 = [
+  "React Js",
+  "Next JS",
+  "Javascript",
+  "Tailwind css",
+  "MERN",
+  "React Native",
+];
 
 const slide = [
   {
@@ -50,6 +97,10 @@ const slide = [
   }
 ]
 const Main = () => {
+
+  const maskImageStyle = {
+    maskImage: 'linear-gradient(to right, hsl(0 0% 0% / 0), hsl(0 0% 0% / 1) 10%, hsl(0 0% 0% / 1) 90%, hsl(0 0% 0% / 0))'
+  };
   const [toggle, setToggle] =useState(true)
   const [toggle1, setToggle1] =useState(false)
   const [toggle2, setToggle2] =useState(false)
@@ -166,35 +217,69 @@ const Main = () => {
           
            {/* SKILLS */}
            <motion.div  exit={{scale:1.1, opacity:0}} transition={{duration:0.5,delay:0.5}} className=' w-full h-auto flex flex-col items-center justify-center '>
-           <section className='w-full h-auto py-24'>
-            <div className='w-[100%] lg:w-[70%] mx-auto px-2 sm:px-10 '>
-                <div>
-                   <h1 className='text-2xl sm:text-5xl font-semibold font-opensans text-white'><span className='text-[#64ffda]'>0.2 </span> Skills</h1>
-                   <p className='text-xl py-2 text-gray-400'>My Area of Expertiese</p>
-                </div>
-                <h1 className='text-[#64ffda] mt-2' >frontend dev</h1>
-                <div className='mt-8 w-[100%]  md:w-[70%] h-[10vh] sm:h-[15vh]  md:h-[20vh] flex flex-row  justify-evenly flex-wrap '>
-                      <div className='w-8 h-2 sm:w-14 sm:h-6'> <img src={react} alt="react" /></div>
-                      <div className='w-9 h-2 sm:w-16 sm:h-6'> <img src={nextjs} alt="react" /></div>
-                      <div className='w-8 h-2 sm:w-14 sm:h-6'> <img src={javascript} alt="react" /></div>
-                      <div className='w-8 h-2 sm:w-14 sm:h-6'> <img src={typescript} alt="react" /></div>
-                      <div className='w-8 h-2 sm:w-14 sm:h-6'> <img src={redux} alt="react" /></div>
-                      <div className='w-8 h-2 sm:w-14 sm:h-6'> <img src={html} alt="react" /></div>
-                      <div className='w-8 h-2 sm:w-14 sm:h-6'> <img src={css} alt="react" /></div>
-                      <div className='w-8 h-2 sm:w-14 sm:h-6'> <img src={styled} alt="react" /></div>
-                      <div className='w-8 h-2 sm:w-14 sm:h-6'> <img src={tailwind} alt="react" /></div>   
-                </div>
-                <h1 className='text-[#64ffda] mt-2' >backend dev</h1>
-                <div className='mt-8 w-[50%]  md:w-[40vh] h-[10vh] sm:h-[15vh] md:h-[20vh]  flex flex-row  justify-evenly flex-wrap '>
-                      <div className='w-8 h-2 sm:w-20 sm:h-6'> <img src={node} alt="react" /></div>
-                      <div className='w-9 h-2 sm:w-20 sm:h-6'> <img src={ mongo} alt="react" /></div>
-                      <div className='w-8 h-2 sm:w-12 sm:h-5'> <img src={git} alt="react" /></div>
-                      <div className='w-8 h-2 sm:w-12 sm:h-5'> <img src={express} alt="react" /></div>
-                    
-                </div>
-            </div>
-           </section>
-    </motion.div>
+           <section className="">
+          <div className="w-[90%] mx-auto py-16">
+          <div className="px-2  flex flex-col items-center  mx-auto justify-center">
+                <div className="w-full mx-auto px-4 text-center mb-12 ">
+                   <h1 className='text-[#64ffda] text-4xl md:text-6xl'  >Skills</h1>
+                  </div>
+
+                    <div className=''>
+
+                      <div className={`${maskImageStyle} relative w-[360px] md:w-[800px] lg:[1200px] overflow-hidden flex  `}>
+                          <MarqueeGroup  className=''>
+                            {
+                              row1.map((item, index)=>{
+                                return(
+                                   <ImageGroup key={index}>
+                                       <Image className='mx-4'><h1 className='text-white  ' >{item}</h1></Image>
+                                   </ImageGroup>
+                                )
+                              })
+                            }
+                          </MarqueeGroup>
+                          <MarqueeGroup>
+                            {
+                              row1.map((item, index)=>{
+                                return(
+                                   <ImageGroup key={index}>
+                                       <Image className=' hidden lg:block '><h1 className='text-white '>{item}</h1></Image>
+                                   </ImageGroup>
+                                )
+                              })
+                            }
+                          </MarqueeGroup>
+                      </div>
+                    </div>
+
+                    <div className=' w-[360px] md:w-[800px] lg:[1200px] overflow-hidden flex my-6'>
+                      <MarqueeGroup2>
+                        {
+                          row2.map((item, index)=>{
+                            return(
+                               <ImageGroup key={index}>
+                                       <Image className='mx-4'><h1 className='text-white  ' >{item}</h1></Image>
+                               </ImageGroup>
+                            )
+                          })
+                        }
+                      </MarqueeGroup2>
+                      <MarqueeGroup2>
+                        {
+                          row2.map((item, index)=>{
+                            return(
+                               <ImageGroup key={index}>
+                                       <Image className=' hidden lg:block '><h1 className='text-white '>{item}</h1></Image>
+                               </ImageGroup>
+                            )
+                          })
+                        }
+                      </MarqueeGroup2>
+                    </div>
+              </div>
+           </div>
+      </section>
+          </motion.div>
            {/* ACHIVEMENT & EXPERIENCE  */}
            <div className='h-auto md:h-[60vh] w-full md:w-3/4 mx-auto  px-2 sm:px-24 lg:mt-24 lg:py-24'> 
               <div className='px-4 sm:px-3 flex flex-row items-center gap-6 mb-5 lg:mb-20'>
