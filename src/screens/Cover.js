@@ -46,8 +46,6 @@ import {Link } from 'react-router-dom'
                   skills to your organization. I am highly motivated, detail-oriented, and eager to learn and grow as a developer.
                   I believe that my passion for front-end development, my experience with various technologies, and my
                   willingness to take on new challenges make me an ideal candidate for this position.<br/>
-                  Thank you for considering my application. I look forward to discussing my qualifications further and
-                  learning more about the opportunities available at your company
                 </p>
             </div>
             <div className='py-5'>
