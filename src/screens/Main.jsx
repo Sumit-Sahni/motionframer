@@ -150,7 +150,7 @@ const Main = () => {
                  initial={{y:20, opacity:0}}
                  animate={{y:0,opacity:1}}
                  transition={{duration:0.6, delay:0.3}}
-                className='text-gray-400 sm:text-xl'>I'm a software developer student specializing in Web-dev and problem solving. Currently, I'm focused on learning Typescript & Go Lang</motion.p>
+                className='text-gray-400 sm:text-xl'>I'm a software developer student specializing in Web-dev and problem solving. Currently, I'm focused on learning Typescript & Algorithm's</motion.p>
             </div>
             <div className='px-2 sm:px-4 mt-4'>
                   {/* BUTTON GET IN TOUCH */}
@@ -179,7 +179,7 @@ const Main = () => {
                  <div className='p-4 text-gray-400  '>
                          <h1>
                             <span className='w-96 '>
-                            <p>Currently at Pune Maharashtra studying Master's in Computer Application, set to post graduate in July 2023.</p></span>
+                            <p>Currently at Pune Maharashtra studying Master's in Computer Application, set to post graduate in Aug 2023.</p></span>
                          </h1>
                               <div className='p-4'></div> 
                           <h1>
