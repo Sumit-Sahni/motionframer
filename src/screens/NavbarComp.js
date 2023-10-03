@@ -37,11 +37,13 @@ const NavbarComp = () => {
                   <Link to="/"><img  src={Logo} alt='logo' width={40}></img></Link>
              </motion.div>
               <motion.ul  initial={{opacity:0}} animate={{opacity:1}} transition={{duration:1}} className='hidden md:flex items-center text-xl font-light mx-4 '>
-                <h1><a href="https://feeff6b9.evogym-bfv.pages.dev/" className='text-sm'>React Js</a></h1>
-                <Link className="mx-8 text-sm" to='/Ui'>UI</Link>
-                <Link to='/work' className='text-sm'>work</Link>
-                <button class="mx-4 hover:bg-gray-900 hover:border-dotted  border-spacing-1 font-semibold text-[#64ffda] py-2 px-2 border-2 border-[#64ffda] rounded">
-                   <Link to="https://drive.google.com/file/d/1Tf2dvDszyQLZPsLPQqVB8gKuE04JlIoR/view?usp=share_link" className='text-red-600 font-semibold'>resume</Link>
+                <h1><a href="https://feeff6b9.evogym-bfv.pages.dev/"  target="_blank" className='text-sm'>React Js</a></h1>
+                <Link className="mx-8 text-sm" to='/Ui'>Ui</Link>
+                <Link to='/cover' className='text-sm'>Cover</Link>
+                <Link to='/sql' className='text-sm mx-6'>Sql</Link>
+
+                 <button class="mx-4 hover:bg-gray-900 hover:border-dotted  border-spacing-1 font-semibold text-[#64ffda] py-2 px-2 border-2 border-[#64ffda] rounded">
+                   <Link to="https://drive.google.com/file/d/1GoT5y92ZlqxENP_eZqJOIiGVg3k6J78N/view?usp=sharing" target="_blank" className='text-red-600 font-semibold'>resume</Link>
                   </button>
               </motion.ul>
               <div className=' md:hidden' onClick={handleNavbar}>
@@ -55,15 +57,18 @@ const NavbarComp = () => {
                      <Link to="/Ui" className=' cursor-pointer'>UI</Link>
                   </li>
                  <li className='p-4 w-full text-2xl font-cba my-5 text-left'>
-                     <Link to="/work" className=' cursor-pointer'>Work</Link>                 
+                    <Link to='/cover' >Cover</Link>
+                 </li>
+                 <li className='p-4 w-full text-2xl font-cba my-5 text-left'>
+                    <Link to='/Sql' >Sql</Link>
                  </li>
                  <li className='p-4 w-full text-2xl font-cba my-5 text-left'>
                   <button class=" hover:bg-gray-900 hover:border-dotted  border-spacing-1 font-semibold text-[#ffffff] rounded">
-                   <Link to="https://drive.google.com/file/d/1Tf2dvDszyQLZPsLPQqVB8gKuE04JlIoR/view?usp=share_link" className='text-red-600 font-semibold'>resume</Link>
+                   <Link to="https://drive.google.com/file/d/1GoT5y92ZlqxENP_eZqJOIiGVg3k6J78N/view?usp=sharing" className='text-red-600 font-semibold'>resume</Link>
                   </button>      
                  </li>
                  <li className='p-4 w-full text-2xl font-cba my-5 text-left'>
-                     <h1><a href="https://e22929cd.typescript-f18.pages.dev/" className=''>Typescript</a></h1>
+                     <h1><a href="https://e22929cd.typescript-f18.pages.dev/" target="_blank" className=''>React Js</a></h1>
                   </li>
          </ul>
         

@@ -7,6 +7,7 @@ import UIWorks from "./UIWorks";
 import Work from "./Work";
 import Cover  from "./Cover";
 import Main from "./Main";
+import  Sql from "./Sql";
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -33,6 +34,7 @@ function AnimatedRoutes() {
         <Route path="/cover" element={<Cover/>}/> 
         <Route path="/work" element={<Work/>}/> 
         <Route path="/*" element={<Navigate to="/"/>}/>
+        <Route path="/sql" element={<Sql/>}/>
       </Routes>
     </AnimatePresence>
   );

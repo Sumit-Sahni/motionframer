@@ -10,7 +10,7 @@ import {Link } from 'react-router-dom'
   return (
     <>
 
-       <div
+      <div
           className='w-full h-[80px] z-10  sticky bg-[#0a192f]'>
           <div className='px-12 flex justify-between items-center w-full h-full'>
              <motion.div initial={{x:-100}} animate={{x:0}} transition={{duration:1}} className='flex items-center'>
@@ -19,7 +19,7 @@ import {Link } from 'react-router-dom'
           </div>
          
           
-        </div>
+      </div>
 
        <motion.div
          initial={{opacity: 0, scale:3}}
