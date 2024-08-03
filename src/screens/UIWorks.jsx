@@ -55,10 +55,7 @@ const UIWorks = ({isTopOfPage}) => {
              <motion.div initial={{x:-100}} animate={{x:0}} transition={{duration:1 ,delay:2}} className='flex items-center'>
                   <Link to="/"><img src={Logo} alt='logo' width={40}></img></Link>
              </motion.div>
-              <motion.ul  initial={{opacity:0}} animate={{opacity:1}} transition={{duration:1}} className='hidden md:flex items-center text-xl  mx-4 '>
-                <Link className="mx-8" to='/cover'>Cover</Link>
-                <Link to='/work'>work</Link>
-              </motion.ul>
+
               <div className=' md:hidden' onClick={handleNavbar}>
                 {!nav ? <AiOutlineClose size={30} className="cursor-pointer "/> :<AiOutlineMenu size={30} className="cursor-pointer"/> }
             
@@ -67,14 +64,9 @@ const UIWorks = ({isTopOfPage}) => {
          
           <ul  className={nav ? "hidden" :  ` absolute bg-black text-white w-full h-[800vh]  px-8 md:hidden text-3xl`}>
           <li className='p-4 w-full text-2xl font-cba my-5 text-left'>
-                <Link to='/cover'>Cover</Link>
-                 </li>
-                 
-                 <li className='p-4 w-full text-2xl font-cba my-5 text-left'>
-                  <Link to={'/work'}>Work</Link>
-                 </li>
-
-                 <li className='p-4 w-full text-2xl font-cba my-5 text-left'>
+          <motion.div initial={{x:-100}} animate={{x:0}} transition={{duration:1 ,delay:2}} className='flex items-center'>
+                  <Link to="/">Home</Link>
+             </motion.div>
                  </li>
               </ul>
         

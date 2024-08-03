@@ -82,13 +82,13 @@ const slide = [
   {
     url: room2,
     img: "https://unsplash.com/photos/i1VQZsU86ok/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjc4NTQ4ODY1&force=true&w=640",
-    title: "Web Dev",
+    title: "Web Apps",
     about: "Offer to design and develop visually appealing and user-friendly websites that are optimized for various devices."
   },
   {
     url: room3,
     img: "https://unsplash.com/photos/x9WGMWwp1NM/download?force=true&w=640",
-    title: "App Design",
+    title: "App Dev",
     about: "Offer to test websites or applications across multiple browsers and platforms to ensure that they work correctly and look consistent."
   },
   {
@@ -152,7 +152,7 @@ const Main = () => {
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className='text-gray-400 sm:text-xl'>I'm a software developer specializing in Software-App's and problem solving. Currently, I'm focused on learning Data related field </motion.p>
+              className='text-gray-400 sm:text-xl'>Software developer specializing in Software-App's and problem solving. Currently, focused on learning new tech. </motion.p>
           </div>
           <div className='px-2 sm:px-4 mt-4'>
             {/* BUTTON GET IN TOUCH */}
@@ -181,7 +181,7 @@ const Main = () => {
               <div className='p-4 text-gray-400  '>
                 <h1>
                   <span className='w-96 '>
-                    <p>I am proud to have successfully completed my Master's in Computer Application, a significant milestone in my educational journey, in [Sep 2023]. Throughout this academic endeavor, I have honed my skills, deepened my understanding of the digital landscape.</p></span>
+                    <p>I am proud to have successfully completed my Master's in Computer Application, a significant milestone in my educational journey, in [Dec 2023]. Throughout this academic endeavor, I have honed my skills, deepened my understanding of the digital landscape.</p></span>
                 </h1>
                 <div className='p-4'></div>
                 <h1>
@@ -211,7 +211,7 @@ const Main = () => {
                 viewport={{ once: 'true' }}
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className="relative flex flex-row  justify-center items-center rounded-full  mt-4 p-2   border-2 border-[#64ffda]  shadow-lg hover:border-dotted  ">
-                <img src={me1} alt="me1" className=" w-52 sm:w-72  h-full rounded-full border hover:opacity-75  opacity-40 cursor-pointer" />
+                <img src={me1} alt="me1" className=" w-52 sm:w-72  h-full rounded-full border " />
               </motion.div>
             </div>
           </div>
@@ -223,7 +223,7 @@ const Main = () => {
             <div className="w-[90%] mx-auto py-16">
               <div className="px-2  flex flex-col items-center  mx-auto justify-center">
                 <div className="w-full mx-auto px-4 text-center mb-12 ">
-                  <h1 className='text-[#64ffda] text-4xl md:text-6xl'  >Skills</h1>
+                  <h1 className='text-[#64ffda] text-4xl md:text-6xl'><span className='text-[#64ffda] md:text-4xl'>0.2</span> Skills</h1>
                 </div>
 
                 <div className=''>
@@ -322,13 +322,15 @@ const Main = () => {
                     transition={{ duration: 0.6 }}
                   >
                     <h1 className=' font-playfair text-3xl font-bold text-white'>Badge <span className='text-[#64ffda]'>1st</span> Position</h1>
+                    <h1 className='text-blue'><a href="https://drive.google.com/file/d/1fYxtSDvl8sW5ePKUyCj22ESkiMMtSuyD/view"  target="_blank" className='text-sm'>Link</a></h1>
+
                     <p className='mt-2 text-gray-400 '>Dec 2021</p>
                     <div className='w-full sm:w-3/5 py-4'>
                       <motion.p
                         initial={{ y: -20, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ duration: 0.6 }}
-                        className='text-gray-400'>Part of Inter-College competition, Sinhgad Institute of Management & Achivers College of Mumbai</motion.p>
+                        className='text-gray-400'>Part of Inter-College competition, Sinhgad Institute of Management & Achivers College of Mumbai.</motion.p>
                     </div>
                   </motion.div>
                   : null)
@@ -342,12 +344,13 @@ const Main = () => {
                   >
                     <h1 className=' font-playfair text-3xl font-bold text-white'>Development</h1>
                     <p className='mt-2 text-gray-400 '>Learning</p>
+                    <h1 className='text-blue'><a href="https://feeff6b9.evogym-bfv.pages.dev/"  target="_blank" className='text-sm'>Link</a></h1>
                     <div className='w-full  sm:w-3/5 py-4'>
                       <motion.p
                         initial={{ y: -20, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ duration: 0.6 }}
-                        className='text-gray-400'>Have been devloping & creating UI design since last 1 year</motion.p>
+                        className='text-gray-400'>Have been devloping & creating UI design since last 1 year.</motion.p>
                     </div>
                   </motion.div>
                   : null)
