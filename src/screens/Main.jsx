@@ -429,7 +429,7 @@ const Main = () => {
             </div>
 
             <div>
-              <button class=" hover:bg-gray-900 hover:border-dotted  border-spacing-1 font-semibold text-[#64ffda] py-4 px-8 border-2 border-[#64ffda] rounded">
+              <button className=" hover:bg-gray-900 hover:border-dotted  border-spacing-1 font-semibold text-[#64ffda] py-4 px-8 border-2 border-[#64ffda] rounded">
                 <Link to="mailto:sumit.123sahni@gmail.com?subject=Let's grab coffee" target="_top" className='text-sm'>Say Hello</Link>
               </button>
             </div>
