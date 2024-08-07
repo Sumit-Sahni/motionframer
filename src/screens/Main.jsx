@@ -28,7 +28,7 @@ justify-content: space-between;
 white-space: nowrap;
 width: 100%;
 
-animation:${scrollX} 12s linear infinite;
+animation:${scrollX} 28s linear infinite;
 `
 const MarqueeGroup = styled.div`
     ${common}
