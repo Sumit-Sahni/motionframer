@@ -323,7 +323,7 @@ const Main = () => {
                   >
                     <h1 className=' font-playfair text-3xl font-bold text-white'>Badge <span className='text-[#64ffda]'>1st</span> Position</h1>
                     <h1 className='text-blue'><a href="https://drive.google.com/file/d/1fYxtSDvl8sW5ePKUyCj22ESkiMMtSuyD/view"  target="_blank" className='text-sm'>Link</a></h1>
-
+                    <h1 className='text-blue'><a href="https://drive.google.com/file/d/10vECZAAIw90Gv8PU6gAKJEgHC3snTZww/view?usp=sharing"  target="_blank" className='text-sm'>Image</a></h1>
                     <p className='mt-2 text-gray-400 '>Dec 2021</p>
                     <div className='w-full sm:w-3/5 py-4'>
                       <motion.p

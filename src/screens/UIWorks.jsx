@@ -101,8 +101,7 @@ const UIWorks = ({isTopOfPage}) => {
                  viewport={{once:"true"}}
                  transition={{duration:2, delay:2.5}}
                 className='hover:bg-gray-600 mx-4 sm:mx-0 hover:border-2 self-start  hover:text-white bg-gray-400 text-white font-bold py-2 px-4 rounded-full mt-4'>
-                 <Link href={"/"}  >Download Soon</Link>  
-                </motion.button>
+               </motion.button>
             </div> 
            </div>
       </motion.div>
@@ -151,7 +150,6 @@ const UIWorks = ({isTopOfPage}) => {
                  viewport={{once:"true"}}
                  transition={{duration:2, delay:2.5}}
                   className='hover:bg-gray-600 hover:border-2 self-start mx-4 sm:mx-0 hover:text-white bg-gray-400 text-white font-bold py-2 px-4 rounded-full mt-4'>
-                 <Link href={apk} download={apk} >Download</Link>  
                 </motion.button>
             </div> 
            </div>

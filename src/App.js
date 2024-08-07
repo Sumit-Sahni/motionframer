@@ -10,7 +10,7 @@ const App = ()=> {
    useEffect(()=>{
       setTimeout(()=>{
          setTrigger(false)
-      },2000)
+      },550)
    },[])
     return(
       
