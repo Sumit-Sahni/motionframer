@@ -76,7 +76,7 @@ const NavbarComp = () => {
                     <p>Total Visitors - {visitorCount}</p>
                     </Link>
                     <button className="mx-4 hover:bg-gray-900 hover:border-dotted border-spacing-1 font-semibold text-[#64ffda] py-2 px-2 border-2 border-[#64ffda] rounded">
-                        <Link to="https://drive.google.com/file/d/1GoT5y92ZlqxENP_eZqJOIiGVg3k6J78N/view?usp=sharing" target="_blank" rel="noopener noreferrer" className='text-red-600 font-semibold'>resume</Link>
+                        <Link to="https://drive.google.com/file/d/1h3xK1EMB9W_83aNWBYlds31DBjdaO64c/view?usp=sharing" target="_blank" rel="noopener noreferrer" className='text-red-600 font-semibold'>resume</Link>
                     </button>
                 </motion.ul>
                 <div className='md:hidden' onClick={handleNavbar}>
@@ -90,7 +90,7 @@ const NavbarComp = () => {
                 </li>
                 <li className='p-4 w-full text-2xl font-cba my-5 text-left'>
                     <button className="hover:bg-gray-900 hover:border-dotted border-spacing-1 font-semibold text-[#ffffff] rounded">
-                        <Link to="https://drive.google.com/file/d/1GoT5y92ZlqxENP_eZqJOIiGVg3k6J78N/view?usp=sharing" target="_blank" rel="noopener noreferrer" className='text-red-600 font-semibold'>resume</Link>
+                        <Link to="https://drive.google.com/file/d/1h3xK1EMB9W_83aNWBYlds31DBjdaO64c/view?usp=sharing" target="_blank" rel="noopener noreferrer" className='text-red-600 font-semibold'>resume</Link>
                     </button>
                 </li>
                 <li className='p-4 w-full text-2xl font-cba my-5 text-left'>
